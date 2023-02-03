@@ -259,6 +259,45 @@ $color-red: #DA1F39
   align-items: center
   margin-bottom: 10px
 
+.capsuls
+  background-image: url(./images/capsuls/capsuls-background.png)
+  background-repeat: no-repeat
+  background-size: cover
+  height: 650px
+
+.capsuls__content
+  padding: 80px 80px 0 80px
+  display: grid
+  grid-template-columns: 1fr 1fr
+  
+.capsuls__text
+  background-color: #FFFFFF
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+  p:nth-of-type(1)
+    +font(400, 14px, 16px, #939694)
+    text-transform: uppercase
+    
+  h2
+    @extend %font-heading
+    width: 410px
+    text-align: center
+    margin-bottom: 30px
+
+  p:nth-of-type(2)
+    +font(300, 14px, 166.19%, $color-primary)
+    font-feature-settings: 'pnum' on, 'lnum' on
+    text-align: center
+    width: 320px
+    margin-bottom: 50px
+
+.capsuls__btn
+  padding: 17px 53px
+    
+
   
 
 
