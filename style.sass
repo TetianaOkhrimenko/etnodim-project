@@ -241,13 +241,12 @@ $color-red: #DA1F39
 
 .cards__price
   +font(700, 14px, 166.19%, $color-primary)
-  font-feature-settings: 'pnum' on, 'lnum' on
   margin-right: 10px
 
 .description
   +font(300, 14px, 166.19%, $color-primary)
   margin-bottom: 10px
-  font-feature-settings: 'pnum' on, 'lnum' on
+
 
 
 .new-arrivals__card:nth-of-type(2) 
@@ -292,7 +291,6 @@ $color-red: #DA1F39
 
   p:nth-of-type(2)
     +font(300, 14px, 166.19%, $color-primary)
-    font-feature-settings: 'pnum' on, 'lnum' on
     text-align: center
     width: 320px
     margin-bottom: 50px
@@ -328,6 +326,24 @@ $color-red: #DA1F39
 
 .discount__price
     color: $color-red
+
+.philosophy
+  padding-right: 217px
+  display: grid
+  grid-template-columns: 1fr 1fr
+  gap: 128px
+
+.philosophy__content
+  background-image: url(./images/philosophy/philosophy-background.png)
+  background-repeat: no-repeat
+  display: flex
+  align-items: flex-end
+  justify-content: flex-end
+  height: 635px
+
+.philosophy__text
+  width: 493px
+  padding-top: 115px
 
 
 
