@@ -44,7 +44,7 @@ h1, h2, h3, p {
   color: #EFEFEF;
 }
 
-.capsuls__text h2, .new-arrivals__block h2, .hero__block h2 {
+.capsuls__text h2, .header-cards h2, .hero__block h2 {
   font-family: "Dela Gothic One";
   font-weight: 400;
   font-size: 36px;
@@ -226,30 +226,43 @@ h1, h2, h3, p {
   padding: 0 80px 128px 80px;
 }
 
-.new-arrivals__block {
+.header-cards {
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
 }
-.new-arrivals__block img {
+.header-cards img {
   cursor: pointer;
 }
-.new-arrivals__block div {
+.header-cards div {
   align-self: center;
 }
 
-.new-arrivals__arrow-right {
+.arrow-right {
   transform: rotate(180deg);
+  margin-left: 20px;
 }
 
-.new-arrivals__cards {
+.cards {
   display: flex;
   gap: 50px;
 }
-.new-arrivals__cards img {
+.cards img {
   margin-bottom: 10px;
 }
-.new-arrivals__cards p:nth-of-type(1) {
+
+.cards__price {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 166.19%;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+  font-feature-settings: "pnum" on, "lnum" on;
+  margin-right: 10px;
+}
+
+.description {
   font-family: "Raleway";
   font-weight: 300;
   font-size: 14px;
@@ -257,15 +270,6 @@ h1, h2, h3, p {
   font-feature-settings: "pnum" on, "lnum" on;
   color: #000000;
   margin-bottom: 10px;
-  font-feature-settings: "pnum" on, "lnum" on;
-}
-.new-arrivals__cards p:nth-of-type(2) {
-  font-family: "Raleway";
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 166.19%;
-  font-feature-settings: "pnum" on, "lnum" on;
-  color: #000000;
   font-feature-settings: "pnum" on, "lnum" on;
 }
 
@@ -330,4 +334,37 @@ h1, h2, h3, p {
 
 .capsuls__btn {
   padding: 17px 53px;
+}
+
+.discount {
+  padding: 210px 80px 141px 80px;
+}
+
+.discount__block {
+  background-image: url(./images/discount/card-3-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 323px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.discount__description {
+  margin-bottom: 30px;
+}
+
+.discount__text {
+  display: flex;
+  align-items: center;
+}
+.discount__text p:nth-of-type(2) {
+  color: #939694;
+  text-decoration: line-through;
+}
+
+.discount__price {
+  color: #DA1F39;
 }/*# sourceMappingURL=style.css.map */
