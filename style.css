@@ -44,7 +44,7 @@ h1, h2, h3, p {
   color: #EFEFEF;
 }
 
-.hero__block h2 {
+.new-arrivals__block h2, .hero__block h2 {
   font-family: "Dela Gothic One";
   font-weight: 400;
   font-size: 36px;
@@ -140,10 +140,11 @@ h1, h2, h3, p {
 }
 
 .hero__content {
-  background-image: url(./images/hero-main-image.png);
+  background-image: url(./images/hero-main-image.png), linear-gradient(90deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%);
   background-size: cover;
   height: 551px;
   padding: 155px 0 0 88px;
+  position: relative;
 }
 .hero__content h1 {
   width: 715px;
@@ -174,6 +175,13 @@ h1, h2, h3, p {
   text-transform: uppercase;
 }
 
+.hero__scroll {
+  position: absolute;
+  bottom: -44px;
+  right: 50%;
+  cursor: pointer;
+}
+
 .block_flex {
   display: flex;
   justify-content: center;
@@ -188,6 +196,7 @@ h1, h2, h3, p {
 .hero__block h2 {
   z-index: 1;
   text-align: center;
+  padding-top: 65px;
 }
 .hero__block h2 .span_w-b {
   background: linear-gradient(to left, black 50%, white 50%);
@@ -211,4 +220,63 @@ h1, h2, h3, p {
   bottom: 0;
   right: 0;
   z-index: -2;
+}
+
+.new-arrivals {
+  padding: 0 80px 128px 80px;
+}
+
+.new-arrivals__block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.new-arrivals__block img {
+  cursor: pointer;
+}
+.new-arrivals__block div {
+  align-self: center;
+}
+
+.new-arrivals__arrow-right {
+  transform: rotate(180deg);
+}
+
+.new-arrivals__cards {
+  display: flex;
+  gap: 50px;
+}
+.new-arrivals__cards img {
+  margin-bottom: 10px;
+}
+.new-arrivals__cards p:nth-of-type(1) {
+  font-family: "Raleway";
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 166.19%;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+  margin-bottom: 10px;
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+.new-arrivals__cards p:nth-of-type(2) {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 166.19%;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+
+.new-arrivals__card:nth-of-type(2) div {
+  background-image: url(./images/new-arrivals/card-2-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 323px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
 }/*# sourceMappingURL=style.css.map */

@@ -138,10 +138,11 @@ $color-red: #DA1F39
     
 
 .hero__content
-  background-image: url(./images/hero-main-image.png)
+  background-image: url(./images/hero-main-image.png), linear-gradient(90deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%)
   background-size: cover
   height: 551px
   padding: 155px 0 0 88px
+  position: relative
 
   h1
     @extend %font-main-heading
@@ -161,6 +162,12 @@ $color-red: #DA1F39
     cursor: pointer
     text-transform: uppercase
 
+.hero__scroll
+   position: absolute
+   bottom: -44px
+   right: 50%
+   cursor: pointer
+
 .block_flex
   display: flex
   justify-content: center
@@ -170,11 +177,15 @@ $color-red: #DA1F39
   width: 846px
   height: 420px
   position: relative
+  
 
   h2
     @extend %font-heading
     z-index: 1
     text-align: center
+    padding-top: 65px
+   
+ 
 
     .span_w-b
       background: linear-gradient(to left, black 50%, white 50%)
@@ -197,6 +208,56 @@ $color-red: #DA1F39
   bottom: 0
   right: 0
   z-index: -2
+
+
+.new-arrivals
+  padding: 0 80px 128px 80px
+
+.new-arrivals__block
+  display: flex
+  justify-content: space-between
+  margin-bottom: 40px
+
+  h2
+    @extend %font-heading
+    
+
+  img
+    cursor: pointer
+
+  div
+    align-self: center
+
+.new-arrivals__arrow-right
+  transform: rotate(180deg)
+
+.new-arrivals__cards
+  display: flex
+  gap: 50px
+
+  img
+    margin-bottom: 10px
+
+  p:nth-of-type(1)
+    +font(300, 14px, 166.19%, $color-primary)
+    margin-bottom: 10px
+    font-feature-settings: 'pnum' on, 'lnum' on
+
+  p:nth-of-type(2)
+    +font(700, 14px, 166.19%, $color-primary)
+    font-feature-settings: 'pnum' on, 'lnum' on
+
+
+.new-arrivals__card:nth-of-type(2) div
+  background-image: url(./images/new-arrivals/card-2-background.png)
+  background-repeat: no-repeat
+  background-size: cover
+  width: 323px
+  height: 400px
+  display: flex
+  justify-content: center
+  align-items: center
+  margin-bottom: 10px
 
   
 
