@@ -189,13 +189,14 @@ h1, h2, h3, p {
   z-index: 1;
   text-align: center;
 }
-.hero__block h2 span {
-  didplay: inline-block;
-  margin: 0;
+.hero__block h2 .span_w-b {
   background: linear-gradient(to left, black 50%, white 50%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.hero__block h2 .span_w {
+  color: #EFEFEF;
 }
 
 .hero__image-up {
