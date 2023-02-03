@@ -1,4 +1,202 @@
+@font-face
+  font-family: 'Dela Gothic One'
+  src: url(./fonts/DelaGothicOne/DelaGothicOne/DelaGothicOne-Regular.woff2) format(woff2)
+  src: url(./fonts/DelaGothicOne/DelaGothicOne/DelaGothicOne-Regular.woff) format(woff)
+  font-weight: 400
+
+@font-face
+  font-family: 'Raleway'
+  src: url(./fonts/RalewayFont/RalewayFont/Raleway-Bold.woff) format(woff)
+  font-weight: 700
+
+@font-face
+  font-family: 'Raleway'
+  src: url(./fonts/RalewayFont/RalewayFont/Raleway-SemiBold.woff) format(woff)
+  font-weight: 600
+
+@font-face
+  font-family: 'Raleway'
+  src: url(./fonts/RalewayFont/RalewayFont/Raleway-Regular.woff) format(woff)
+  
+  font-weight: 400
+
+@font-face
+  font-family: 'Raleway'
+  src: url(./fonts/RalewayFont/RalewayFont/Raleway-Light.woff) format(woff)
+  font-weight: 300
+
+
 *
   box-sizing: border-box
   margin: 0
   padding: 0
+
+h1, h2, h3, p
+  margin: 0
+  padding: 0
+
+$font-title: 'Dela Gothic One'
+$font-text: 'Raleway'
+$color-primary: #000000
+$color-secondary: #EFEFEF
+$color-red: #DA1F39
+
+%font-main-heading
+  font-family: 'Dela Gothic One'
+  font-weight: 400
+  font-size: 64px
+  line-height: 72px
+  text-transform: uppercase
+  color: $color-secondary
+
+
+%font-heading
+  font-family: 'Dela Gothic One'
+  font-weight: 400
+  font-size: 36px
+  line-height: 140.3%
+  text-transform: uppercase
+  color: $color-primary
+
+@mixin font($font-weight, $font-size, $line-height, $color)
+  font-family: 'Raleway'
+  font-weight: $font-weight
+  font-size: $font-size
+  line-height: $line-height
+  font-feature-settings: 'pnum' on, 'lnum' on
+  color: $color
+  
+
+.nav
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  padding: 25px 80px
+
+  a
+    text-decoration: none
+    color: $color-primary
+
+  li
+    list-style: none
+    +font(400, 16px, 19px, $color-primary)
+    align-self: center
+
+.nav__content
+  display: flex
+
+  li
+    margin-right: 30px
+
+.nav__list
+  display: flex
+  justify-content: flex-end
+  
+  li
+    justify-self: flex-end
+
+  li:nth-child(-n+3)
+    margin-right: 20px
+
+  li:nth-child(4n)
+    margin-right: 10px
+    cursor: pointer
+
+  li:nth-child(5n)
+    position: relative
+    cursor: pointer
+
+
+.nav__logo-content
+  justify-self: center
+
+
+.nav__item 
+  display: flex
+
+.nav__arrow-icon
+  align-self: center
+  cursor: pointer
+  margin-left: 5px
+
+.badge
+  background: #DA1F39
+  width: 12px
+  height: 12px
+  border-radius: 50%
+  display: flex
+  justify-content: center
+  position: absolute
+  bottom: 3px
+  right: -5px
+
+.badge__number
+  +font(400, 10px, 12px, $color-secondary)
+  font-family: 'Roboto'
+
+.hero
+  padding: 43px 92px 0 68px
+    
+
+.hero__content
+  background-image: url(./images/hero-main-image.png)
+  background-size: cover
+  height: 551px
+  padding: 155px 0 0 88px
+
+  h1
+    @extend %font-main-heading
+    width: 715px
+    margin-bottom: 10px
+
+  p
+    +font(600, 16px, 19px, $color-secondary)
+    margin-bottom: 50px
+
+.btn
+    +font(600, 14px, 16px, $color-secondary)
+    letter-spacing: 0.05em
+    padding: 17px 27.5px
+    background-color: $color-red
+    border: none
+    cursor: pointer
+    text-transform: uppercase
+
+.block_flex
+  display: flex
+  justify-content: center
+  padding: 87px 0 128px 0
+
+.hero__block
+  width: 846px
+  height: 420px
+  position: relative
+
+  h2
+    @extend %font-heading
+    z-index: 1
+    text-align: center
+
+    span
+      didplay: inline-block
+      margin: 0
+      background: linear-gradient(to left, black 50%, white 50%)
+      background-clip: text
+      -webkit-background-clip: text
+      -webkit-text-fill-color: transparent
+    
+
+.hero__image-up
+  position: absolute
+  top: 0
+  left: 0
+  z-index: -2
+
+.hero__image-down
+  position: absolute
+  bottom: 0
+  right: 0
+  z-index: -2
+
+  
+
+

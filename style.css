@@ -1,5 +1,213 @@
+@font-face {
+  font-family: "Dela Gothic One";
+  src: url(./fonts/DelaGothicOne/DelaGothicOne/DelaGothicOne-Regular.woff2) format(woff2);
+  src: url(./fonts/DelaGothicOne/DelaGothicOne/DelaGothicOne-Regular.woff) format(woff);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url(./fonts/RalewayFont/RalewayFont/Raleway-Bold.woff) format(woff);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url(./fonts/RalewayFont/RalewayFont/Raleway-SemiBold.woff) format(woff);
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url(./fonts/RalewayFont/RalewayFont/Raleway-Regular.woff) format(woff);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url(./fonts/RalewayFont/RalewayFont/Raleway-Light.woff) format(woff);
+  font-weight: 300;
+}
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+.hero__content h1 {
+  font-family: "Dela Gothic One";
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 72px;
+  text-transform: uppercase;
+  color: #EFEFEF;
+}
+
+.hero__block h2 {
+  font-family: "Dela Gothic One";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 140.3%;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 25px 80px;
+}
+.nav a {
+  text-decoration: none;
+  color: #000000;
+}
+.nav li {
+  list-style: none;
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+  align-self: center;
+}
+
+.nav__content {
+  display: flex;
+}
+.nav__content li {
+  margin-right: 30px;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: flex-end;
+}
+.nav__list li {
+  justify-self: flex-end;
+}
+.nav__list li:nth-child(-n+3) {
+  margin-right: 20px;
+}
+.nav__list li:nth-child(4n) {
+  margin-right: 10px;
+  cursor: pointer;
+}
+.nav__list li:nth-child(5n) {
+  position: relative;
+  cursor: pointer;
+}
+
+.nav__logo-content {
+  justify-self: center;
+}
+
+.nav__item {
+  display: flex;
+}
+
+.nav__arrow-icon {
+  align-self: center;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.badge {
+  background: #DA1F39;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 3px;
+  right: -5px;
+}
+
+.badge__number {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #EFEFEF;
+  font-family: "Roboto";
+}
+
+.hero {
+  padding: 43px 92px 0 68px;
+}
+
+.hero__content {
+  background-image: url(./images/hero-main-image.png);
+  background-size: cover;
+  height: 551px;
+  padding: 155px 0 0 88px;
+}
+.hero__content h1 {
+  width: 715px;
+  margin-bottom: 10px;
+}
+.hero__content p {
+  font-family: "Raleway";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #EFEFEF;
+  margin-bottom: 50px;
+}
+
+.btn {
+  font-family: "Raleway";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #EFEFEF;
+  letter-spacing: 0.05em;
+  padding: 17px 27.5px;
+  background-color: #DA1F39;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.block_flex {
+  display: flex;
+  justify-content: center;
+  padding: 87px 0 128px 0;
+}
+
+.hero__block {
+  width: 846px;
+  height: 420px;
+  position: relative;
+}
+.hero__block h2 {
+  z-index: 1;
+  text-align: center;
+}
+.hero__block h2 span {
+  didplay: inline-block;
+  margin: 0;
+  background: linear-gradient(to left, black 50%, white 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero__image-up {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+
+.hero__image-down {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -2;
 }/*# sourceMappingURL=style.css.map */
