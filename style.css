@@ -44,7 +44,7 @@ h1, h2, h3, p {
   color: #EFEFEF;
 }
 
-.central-block h2, .philosophy__text h2, .capsuls__text h2, .header-cards h2, .hero__block h2 {
+.drabyna__text h2, .central-block h2, .philosophy__text h2, .capsuls__text h2, .header-cards h2, .hero__block h2 {
   font-family: "Dela Gothic One";
   font-weight: 400;
   font-size: 36px;
@@ -434,7 +434,7 @@ h1, h2, h3, p {
 .central_flex {
   display: flex;
   justify-content: center;
-  padding: 100px 0 0 0;
+  padding: 100px;
 }
 
 .central-block {
@@ -449,16 +449,72 @@ h1, h2, h3, p {
   padding-right: 106px;
 }
 
-.central-block__image-up {
+.central-block__image-down {
   position: absolute;
   z-index: -2;
   bottom: 0;
-  left: 0;
+  left: -3px;
 }
 
-.central-block__image-down {
+.central-block__image-up {
   position: absolute;
   z-index: -2;
   top: 0;
   right: 0;
+}
+
+.drabyna {
+  background-image: url(./images/drabyna/drabyna-1-image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 710px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.drabyna__content {
+  background-image: url(./images/drabyna/drabyna-2-image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1280px;
+  height: 630px;
+}
+
+.drabyna__text {
+  background-color: #FFFFFF;
+  width: 523px;
+  height: 550px;
+  padding: 109px 89px 81px 89px;
+  text-align: center;
+}
+.drabyna__text p:nth-of-type(1) {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #939694;
+  text-transform: uppercase;
+}
+.drabyna__text h2 {
+  margin-bottom: 20px;
+}
+.drabyna__text p:nth-of-type(2) {
+  font-family: "Raleway";
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 166.19%;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+  margin-bottom: 10px;
+}
+.drabyna__text p:nth-of-type(3) {
+  font-family: "Raleway";
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 166.19%;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+  margin-bottom: 50px;
 }/*# sourceMappingURL=style.css.map */
