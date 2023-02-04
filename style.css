@@ -467,7 +467,7 @@ h1, h2, h3, p {
   background-image: url(./images/drabyna/drabyna-1-image.png);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 710px;
+  height: 630px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -479,6 +479,7 @@ h1, h2, h3, p {
   background-size: cover;
   width: 1280px;
   height: 630px;
+  margin-bottom: -80px;
 }
 
 .drabyna__text {
