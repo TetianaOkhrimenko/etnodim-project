@@ -618,4 +618,8 @@ h1, h2, h3, p {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 52px;
+}
+
+.pre-footer__arrow {
+  transition: 300ms all ease-in;
 }/*# sourceMappingURL=style.css.map */
