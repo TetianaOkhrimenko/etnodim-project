@@ -187,14 +187,14 @@ $color-red: #DA1F39
    
  
 
-    .span_w-b
-      background: linear-gradient(to left, black 50%, white 50%)
-      background-clip: text
-      -webkit-background-clip: text
-      -webkit-text-fill-color: transparent
+.span_w-b
+  background: linear-gradient(to left, black 50%, white 50%)
+  background-clip: text
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
 
-    .span_w
-      color: $color-secondary
+.span_w
+  color: $color-secondary
     
 
 .hero__image-up
@@ -367,6 +367,35 @@ $color-red: #DA1F39
     text-transform: uppercase
     text-decoration: none
     display: block
+
+.central_flex
+   display: flex
+   justify-content: center
+   padding: 100px 0 0 0
+
+.central-block
+   width: 957px
+   height: 414px
+   position: relative
+
+   h2
+    @extend %font-heading
+    text-align: center
+    z-index: 1
+    padding-top: 102px
+    padding-right: 106px
+
+.central-block__image-up
+   position: absolute
+   z-index: -2
+   bottom: 0
+   left: 0
+
+.central-block__image-down
+   position: absolute
+   z-index: -2
+   top: 0
+   right: 0
 
  
     
