@@ -44,7 +44,7 @@ h1, h2, h3, p {
   color: #EFEFEF;
 }
 
-.drabyna__text h2, .central-block h2, .philosophy__text h2, .capsuls__text h2, .header-cards h2, .hero__block h2 {
+.address__text h2, .drabyna__text h2, .central-block h2, .philosophy__text h2, .capsuls__text h2, .header-cards h2, .hero__block h2 {
   font-family: "Dela Gothic One";
   font-weight: 400;
   font-size: 36px;
@@ -518,4 +518,51 @@ h1, h2, h3, p {
   font-feature-settings: "pnum" on, "lnum" on;
   color: #000000;
   margin-bottom: 50px;
+}
+
+.address {
+  padding: 210px 0 0 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.address__text {
+  padding-top: 112px;
+}
+.address__text h2 {
+  width: 70%;
+  margin-bottom: 31px;
+}
+.address__text p {
+  font-family: "Raleway";
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 136.19%;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+}
+
+.address__flex {
+  display: flex;
+}
+.address__flex img {
+  width: 21px;
+  height: 21px;
+  margin-right: 10px;
+}
+
+.address__flex:nth-of-type(1) p {
+  margin-bottom: 32px;
+}
+
+.address__content {
+  background-image: url(./images/address/address-2-image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 532px;
+  display: flex;
+  align-items: center;
+}
+.address__content img {
+  margin-left: -108px;
 }/*# sourceMappingURL=style.css.map */
