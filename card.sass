@@ -75,15 +75,6 @@
     +font(700, 14px, 166.2%, $color-primary)
     margin-bottom: 10px
 
-  h3
-    +font(700, 16px, 19px, $color-primary)
-    margin-bottom: 15px
-
-  p:nth-of-type(4)
-    +font(300, 12px, 20px, $color-primary)
-    width: 78%
-    margin-bottom: 15px
-
 
 .etnodim
     +font(400, 10px, 12px, #B5B5B5)
@@ -172,6 +163,46 @@
 .card__btn
   padding: 17px 79px
   margin-bottom: 70px
+
+.card__heading-block
+  display: grid
+  grid-template-columns: 95% 5%
+  width: 65%
+
+.card__dash
+  width: 11px
+  height: 1px
+  background-color: $color-primary
+  cursor: pointer
+
+.card__description
+   h3
+    +font(700, 16px, 19px, $color-primary)
+    margin-bottom: 15px
+    
+   p:nth-of-type(1)
+    +font(300, 12px, 20px, $color-primary)
+    width: 65%
+    margin-bottom: 15px
+
+.description
+   width: 65%
+   border-top: 0.7px solid $color-primary
+
+   h3
+     margin: 15px 0
+
+   div
+     display: grid
+     grid-template-columns: 95% 5%
+
+   img
+     align-self: center
+     cursor: pointer
+
+.description:last-of-type
+   margin-bottom: 0
+
  
   
  
