@@ -65,9 +65,31 @@
     width: 70%
     margin-bottom: 40px
 
+  p:nth-of-type(2)
+    +font(300, 12px, 20px, $color-primary)
+    margin-bottom: 40px
+    text-decoration: underline
+    cursor: pointer
+
+  p:nth-of-type(3)
+    +font(700, 14px, 166.2%, $color-primary)
+    margin-bottom: 10px
+
+  h3
+    +font(700, 16px, 19px, $color-primary)
+    margin-bottom: 15px
+
+  p:nth-of-type(4)
+    +font(300, 12px, 20px, $color-primary)
+    width: 78%
+    margin-bottom: 15px
+
+
 .etnodim
     +font(400, 10px, 12px, #B5B5B5)
     text-transform: uppercase
+
+
 
 .card__counter-item
   display: flex
@@ -107,6 +129,50 @@
   div
     display: flex
     justify-content: center
+
+.card__size-box
+  margin-bottom: 5px
+
+  label
+    display: none
+
+  input[type='radio']
+    appearance: none
+
+  input[type='radio']::after
+    font-family: 'Raleway'
+    font-size: 14px
+    line-height: 166.19%
+    font-feature-settings: 'pnum' on, 'lnum' on
+    color: #000000
+    margin-right: 15px
+    cursor: pointer
+  
+  input[type='radio']:nth-of-type(1)::after
+    content: '32 | XXS'
+
+  input[type='radio']:nth-of-type(2)::after
+    content: '34 | XS'
+
+  input[type='radio']:nth-of-type(3)::after
+    content: '36 | S'
+
+  input[type='radio']:nth-of-type(4)::after
+    content: '38 | M'
+
+  input[type='radio']:nth-of-type(5)::after
+    content: '40 | L'
+
+  input[type='radio']:nth-of-type(6)::after
+    content: '42 | XL'
+
+  input[type='radio']:checked
+    font-weight: 700
+
+.card__btn
+  padding: 17px 79px
+  margin-bottom: 70px
+ 
   
  
     

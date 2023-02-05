@@ -703,6 +703,45 @@ h1, h2, h3, p {
   width: 70%;
   margin-bottom: 40px;
 }
+.card__text p:nth-of-type(2) {
+  font-family: "Raleway";
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 20px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+  margin-bottom: 40px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.card__text p:nth-of-type(3) {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 166.2%;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+  margin-bottom: 10px;
+}
+.card__text h3 {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+  margin-bottom: 15px;
+}
+.card__text p:nth-of-type(4) {
+  font-family: "Raleway";
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 20px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+  width: 78%;
+  margin-bottom: 15px;
+}
 
 .etnodim {
   font-family: "Raleway";
@@ -757,4 +796,51 @@ h1, h2, h3, p {
 .card__plus div {
   display: flex;
   justify-content: center;
+}
+
+.card__size-box {
+  margin-bottom: 5px;
+}
+.card__size-box label {
+  display: none;
+}
+.card__size-box input[type=radio] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.card__size-box input[type=radio]::after {
+  font-family: "Raleway";
+  font-size: 14px;
+  line-height: 166.19%;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.card__size-box input[type=radio]:nth-of-type(1)::after {
+  content: "32 | XXS";
+}
+.card__size-box input[type=radio]:nth-of-type(2)::after {
+  content: "34 | XS";
+}
+.card__size-box input[type=radio]:nth-of-type(3)::after {
+  content: "36 | S";
+}
+.card__size-box input[type=radio]:nth-of-type(4)::after {
+  content: "38 | M";
+}
+.card__size-box input[type=radio]:nth-of-type(5)::after {
+  content: "40 | L";
+}
+.card__size-box input[type=radio]:nth-of-type(6)::after {
+  content: "42 | XL";
+}
+.card__size-box input[type=radio]:checked {
+  font-weight: 700;
+}
+
+.card__btn {
+  padding: 17px 79px;
+  margin-bottom: 70px;
 }/*# sourceMappingURL=card.css.map */
