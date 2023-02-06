@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Dela Gothic One";
   src: url(./fonts/DelaGothicOne/DelaGothicOne/DelaGothicOne-Regular.woff2) format(woff2);
@@ -100,6 +101,13 @@ h1, h2, h3, p {
 }
 .nav__content li {
   margin-right: 30px;
+}
+.nav__content a {
+  transition: all 200ms ease-in-out;
+}
+.nav__content a:hover {
+  color: #DA1F39;
+  text-shadow: 0 0 0.65px #333, 0 0 0.65px #333;
 }
 
 .nav__list {
@@ -759,9 +767,9 @@ h1, h2, h3, p {
   line-height: 20px;
   font-feature-settings: "pnum" on, "lnum" on;
   color: #000000;
-  margin-bottom: 40px;
   text-decoration: underline;
   cursor: pointer;
+  margin-bottom: 10px;
 }
 .card__text p:nth-of-type(3) {
   font-family: "Raleway";
@@ -771,6 +779,21 @@ h1, h2, h3, p {
   font-feature-settings: "pnum" on, "lnum" on;
   color: #000000;
   margin-bottom: 10px;
+}
+
+.card__absense {
+  display: block;
+  font-family: "Raleway";
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 20px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #DA1F39;
+  margin-bottom: 10px;
+}
+
+.none-visible {
+  visibility: hidden;
 }
 
 .etnodim {
@@ -871,8 +894,21 @@ h1, h2, h3, p {
 }
 
 .card__btn {
-  padding: 17px 79px;
   margin-bottom: 70px;
+  padding: 17px 79px;
+}
+
+.card__btn::after {
+  content: "купити";
+}
+
+.btn_absense {
+  margin-bottom: 70px;
+  padding: 17px 17px;
+}
+
+.btn_absense::after {
+  content: "сповістити про наявність";
 }
 
 .card__heading-block {

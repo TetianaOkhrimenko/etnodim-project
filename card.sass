@@ -68,13 +68,22 @@
 
   p:nth-of-type(2)
     +font(300, 12px, 20px, $color-primary)
-    margin-bottom: 40px
     text-decoration: underline
     cursor: pointer
+    margin-bottom: 10px
 
   p:nth-of-type(3)
     +font(700, 14px, 166.2%, $color-primary)
     margin-bottom: 10px
+
+.card__absense
+  display: block
+  +font(300, 12px, 20px, $color-red)
+  margin-bottom: 10px
+
+.none-visible
+  visibility: hidden
+  
 
 
 .etnodim
@@ -161,9 +170,23 @@
   input[type='radio']:checked
     font-weight: 700
 
+@mixin btn-content($content)
+  content: $content
+ 
 .card__btn
-  padding: 17px 79px
-  margin-bottom: 70px
+   margin-bottom: 70px
+   padding: 17px 79px
+
+.card__btn::after
+  +btn-content('купити')
+
+.btn_absense
+   margin-bottom: 70px
+   padding: 17px 17px
+
+.btn_absense::after
+  +btn-content('сповістити про наявність')
+
 
 .card__heading-block
   display: grid

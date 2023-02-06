@@ -101,6 +101,13 @@ h1, h2, h3, p {
 .nav__content li {
   margin-right: 30px;
 }
+.nav__content a {
+  transition: all 200ms ease-in-out;
+}
+.nav__content a:hover {
+  color: #DA1F39;
+  text-shadow: 0 0 0.65px #333, 0 0 0.65px #333;
+}
 
 .nav__list {
   display: flex;

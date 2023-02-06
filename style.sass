@@ -100,11 +100,23 @@ $color-red: #DA1F39
     +font(400, 16px, 19px, $color-primary)
     align-self: center
 
+
 .nav__content
   display: flex
 
   li
     margin-right: 30px
+
+  a
+    transition: all 200ms ease-in-out
+   
+    
+
+  a:hover
+    color: $color-red
+    text-shadow: 0 0 .65px #333, 0 0 .65px #333
+    
+
 
 .nav__list
   display: flex
