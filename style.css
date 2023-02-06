@@ -57,6 +57,10 @@ h1, h2, h3, p {
   padding: 0;
 }
 
+img {
+  max-width: 100%;
+}
+
 .hero__content h1 {
   font-family: "Dela Gothic One";
   font-weight: 400;

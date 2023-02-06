@@ -58,6 +58,10 @@ h1, h2, h3, p {
   padding: 0;
 }
 
+img {
+  max-width: 100%;
+}
+
 .hero__content h1 {
   font-family: "Dela Gothic One";
   font-weight: 400;
@@ -1037,4 +1041,25 @@ h1, h2, h3, p {
   margin-left: -35px;
   top: 50%;
   margin-top: -35px;
+}
+
+@media (max-width: 578px) {
+  .media-unvisible {
+    display: none;
+  }
+  .nav {
+    padding: 8px 10px;
+  }
+  .nav__logo-content {
+    grid-column: 2/3;
+  }
+  .nav__list {
+    grid-column: 3/4;
+  }
+  .nav__list li:nth-child(4n) {
+    margin-right: 15px;
+  }
+}
+.main-card ul {
+  padding: 0;
 }/*# sourceMappingURL=card.css.map */

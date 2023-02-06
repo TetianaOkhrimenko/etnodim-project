@@ -11,7 +11,7 @@
   <body>
     <header>
       <nav class="nav" id="navigation">
-        <ul class="nav__content">
+        <ul class="nav__content media-unvisible">
           <li><a href="#" title="Відкрити каталог">Каталог</a></li>
           <li><a href="#" title="Знижки">Знижки</a></li>
           <li><a href="#" title="Блог">Блог</a></li>
@@ -19,19 +19,19 @@
         </ul>
 
         <div class="nav__logo-content">
-          <a href="/" title="Інтернет-магазин виробів ручної роботи - ЕтноДім"
-            ><img
-              src="./images/etnodim-logo.svg"
-              alt="Інтернет-магазин ЕтноДім"
+          <a href="/" title="Інтернет-магазин виробів ручної роботи - ЕтноДім">
+            <img src="./images/etnodim-logo.svg" alt="Інтернет-магазин ЕтноДім"
           /></a>
         </div>
 
         <ul class="nav__list">
-          <li class="nav__item">UA</li>
-          <li class="nav__item">
+          <li class="nav__item media-unvisible">UA</li>
+          <li class="nav__item media-unvisible">
             <img src="./images/money-icon.svg" alt="Гривня" />
           </li>
-          <li><a href="tel:+380978889292">+38 097 888 92 92</a></li>
+          <li class="media-unvisible">
+            <a href="tel:+380978889292">+38 097 888 92 92</a>
+          </li>
           <li>
             <a href="#" title="Пошук"
               ><img src="./images/search-icon.svg" alt="Пошук"
@@ -59,10 +59,17 @@
 
       <div class="card__content">
         <div class="card__item">
-          <img
-            src="./card-images/card-main-image.png"
-            alt="Вишиванка з рослинним орнаментом Lito"
-          />
+          <picture>
+            <source
+              srcset="./card-images/media/card-main-media.png"
+              media="(max-width: 578px)"
+            />
+            <source srcset="./card-images/card-main-image.png" />
+            <img
+              src="./card-images/card-main-image.png"
+              alt="Вишиванка з рослинним орнаментом Lito"
+            />
+          </picture>
         </div>
         <div class="card__item">
           <img
