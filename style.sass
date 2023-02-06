@@ -28,6 +28,23 @@
   font-weight: 300
 
 
+@keyframes bounce 
+  0%,
+  20%,
+  50%,
+  80%,
+  100% 
+    transform: translateY(0)
+
+  40% 
+    transform: translateY(-30px)
+
+  60% 
+    transform: translateY(-15px)
+  
+
+
+
 *
   box-sizing: border-box
   margin: 0
@@ -107,6 +124,16 @@ $color-red: #DA1F39
     position: relative
     cursor: pointer
 
+.nav__item::after
+  content: ""
+  width: 5px
+  height: 5px
+  margin: 5px
+  border-right: 1px solid $color-primary
+  border-bottom: 1px solid $color-primary
+  transform: rotate(45deg)
+  cursor: pointer
+
 
 .nav__logo-content
   justify-self: center
@@ -169,6 +196,11 @@ $color-red: #DA1F39
    bottom: -44px
    right: 50%
    cursor: pointer
+   transition: all 400ms ease-in-out
+
+.animated
+  animation: bounce 2s ease-in-out
+  animation-iteration-count: infinite
 
 .block_flex
   display: flex
@@ -528,6 +560,11 @@ $color-red: #DA1F39
 
 .pre-footer__arrow
   transition: 300ms all ease-in
+  margin-top: 90px
+
+.animated_up
+  animation: bounce 2s ease-in-out
+  animation-iteration-count: infinite
   
 
 

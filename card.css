@@ -99,6 +99,17 @@ h1, h2, h3, p {
   cursor: pointer;
 }
 
+.nav__item::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  margin: 5px;
+  border-right: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+
 .nav__logo-content {
   justify-self: center;
 }
@@ -661,7 +672,7 @@ h1, h2, h3, p {
 .card__content {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
+  grid-auto-rows: 860px 455px 455px;
 }
 
 .card__item:nth-of-type(1) {
@@ -859,22 +870,38 @@ h1, h2, h3, p {
   margin-bottom: 15px;
 }
 
-.description {
+.border-top {
   width: 65%;
   border-top: 0.7px solid #000000;
 }
-.description h3 {
+.border-top h3 {
   margin: 15px 0;
 }
-.description div {
+.border-top div {
   display: grid;
   grid-template-columns: 95% 5%;
 }
-.description img {
+.border-top img {
   align-self: center;
   cursor: pointer;
 }
 
 .description:last-of-type {
   margin-bottom: 0;
+}
+
+.interest {
+  padding: 130px 80px 0 80px;
+}
+
+.interest__card:nth-of-type(3) div {
+  background-image: url(./card-images/interest-3-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 325px;
+  height: 415px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
 }/*# sourceMappingURL=card.css.map */
