@@ -24,17 +24,6 @@
   src: url(./fonts/RalewayFont/RalewayFont/Raleway-Light.woff) format(woff);
   font-weight: 300;
 }
-@-webkit-keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-30px);
-  }
-  60% {
-    transform: translateY(-15px);
-  }
-}
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
     transform: translateY(0);
@@ -55,10 +44,6 @@
 h1, h2, h3, p {
   margin: 0;
   padding: 0;
-}
-
-img {
-  max-width: 100%;
 }
 
 .hero__content h1 {
@@ -228,10 +213,8 @@ img {
 }
 
 .animated {
-  -webkit-animation: bounce 2s ease-in-out;
-          animation: bounce 2s ease-in-out;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation: bounce 2s ease-in-out;
+  animation-iteration-count: infinite;
 }
 
 .block_flex {
@@ -678,8 +661,6 @@ img {
 }
 
 .animated_up {
-  -webkit-animation: bounce 2s ease-in-out;
-          animation: bounce 2s ease-in-out;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation: bounce 2s ease-in-out;
+  animation-iteration-count: infinite;
 }/*# sourceMappingURL=style.css.map */
