@@ -12,11 +12,17 @@
     <div class="container">
       <header>
         <nav class="nav" id="navigation">
-          <ul class="nav__content media-unvisible">
-            <li><a href="#" title="Відкрити каталог">Каталог</a></li>
-            <li><a href="#" title="Знижки">Знижки</a></li>
-            <li><a href="#" title="Блог">Блог</a></li>
-            <li><a href="#" title="Про нас">Про нас</a></li>
+          <ul class="nav__content">
+            <li class="media-unvisible">
+              <a href="#" title="Відкрити каталог">Каталог</a>
+            </li>
+            <li class="media-unvisible">
+              <a href="#" title="Знижки">Знижки</a>
+            </li>
+            <li class="media-unvisible"><a href="#" title="Блог">Блог</a></li>
+            <li class="media-unvisible">
+              <a href="#" title="Про нас">Про нас</a>
+            </li>
           </ul>
 
           <div class="nav__logo-content">
@@ -244,7 +250,7 @@
               class="card-arrow"
               src="./card-images/media/scroll-card.svg"
               alt="Стрілка"
-            /><a href="#" title="Льняна вишиванка вільного крою Vintage Red"></a>
+            /><a href="#" title="Льняна вишиванка вільного крою Vintage Red">
               <picture>
                 <source
                   srcset="./card-images/media/interest-1-media.png"
@@ -297,7 +303,7 @@
                 alt="Лляна вишита сорочка чорного кольору SLOVO BLACK"
             /></a>
             <p class="description">
-              Лляна вишита сорочка чорного кольору SLOVO BLACK
+              Лляна вишита сорочка чорного кольору SLOVO <br />BLACK
             </p>
             <p class="cards__price">4 200 грн.</p>
           </div>
@@ -311,12 +317,20 @@
         </div>
 
         <div>
-          <a href="#navigation"
-            ><img
-              class="pre-footer__arrow animated_up interest__arrow"
-              src="./card-images/arrow-to-header.svg"
-              alt="Стрілка вверх"
-          /></a>
+          <a href="#navigation">
+            <picture>
+              <source
+                srcset="./card-images/media/arrow-to-header-media.svg"
+                media="(max-width: 375px)"
+              />
+              <source srcset="./card-images/arrow-to-header.svg" />
+              <img
+                class="pre-footer__arrow animated_up interest__arrow"
+                src="./card-images/arrow-to-header.svg"
+                alt="Стрілка вверх"
+              />
+            </picture>
+          </a>
         </div>
       </section>
     </div>

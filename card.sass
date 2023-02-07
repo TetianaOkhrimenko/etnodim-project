@@ -233,7 +233,7 @@
    margin-bottom: 0
 
 .interest
-  padding: 130px 80px 130px 80px
+  padding: 130px 0 130px 80px
 
 .interest__cards
   margin-bottom: 30px
@@ -248,6 +248,14 @@
   justify-content: center
   align-items: center
   margin-bottom: 10px
+
+.interest__card:nth-of-type(4)
+  overflow: hidden
+
+  p:nth-of-type(1)
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: clip
 
 .btn-wrapper
   display: grid
@@ -325,6 +333,15 @@
 
   .nav
     padding: 8px 10px
+
+  .nav__content::after
+    content: ''
+    background: url(./card-images/media/burger-icon-media.svg)
+    width: 20px
+    height: 9px
+    display: inline-block
+    cursor: pointer
+    align-self: center
 
   .nav__logo-content
     grid-column: 2/3
@@ -457,7 +474,7 @@
     margin: 0 auto
 
     p:nth-type(1)
-    width: 80%
+     width: 80%
 
   .card-arrow
     display: block

@@ -955,7 +955,7 @@ h1, h2, h3, p {
 }
 
 .interest {
-  padding: 130px 80px 130px 80px;
+  padding: 130px 0 130px 80px;
 }
 
 .interest__cards {
@@ -972,6 +972,15 @@ h1, h2, h3, p {
   justify-content: center;
   align-items: center;
   margin-bottom: 10px;
+}
+
+.interest__card:nth-of-type(4) {
+  overflow: hidden;
+}
+.interest__card:nth-of-type(4) p:nth-of-type(1) {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
 }
 
 .btn-wrapper {
@@ -1056,6 +1065,15 @@ h1, h2, h3, p {
   }
   .nav {
     padding: 8px 10px;
+  }
+  .nav__content::after {
+    content: "";
+    background: url(./card-images/media/burger-icon-media.svg);
+    width: 20px;
+    height: 9px;
+    display: inline-block;
+    cursor: pointer;
+    align-self: center;
   }
   .nav__logo-content {
     grid-column: 2/3;
@@ -1176,6 +1194,8 @@ h1, h2, h3, p {
   .media-card {
     position: relative;
     margin: 0 auto;
+  }
+  .media-card p:nth-type(1) {
     width: 80%;
   }
   .card-arrow {
