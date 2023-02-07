@@ -105,14 +105,12 @@
     +font(300, 14px, 166.19%, $color-primary)
     
 
-.card__counter
-  border: none
-  outline: none
-  width: 10px
+.card__counter-box
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr
+  
 
 .card__minus
-  display: inline-block
-  margin-right: 10px
   cursor: pointer
   background-color: #F4F4F4
   width: 21px
@@ -120,12 +118,15 @@
   div
     display: flex
     justify-content: center
+
+.card__counter
+  border: none
+  outline: none
+  width: 10px
+  justify-self: center
  
-  
 
 .card__plus
-  display: inline-block
-  margin-left: 10px
   cursor: pointer
   background-color: #F4F4F4
   width: 21px
@@ -142,6 +143,7 @@
 
   input[type='radio']
     appearance: none
+   
 
   input[type='radio']::after
     font-family: 'Raleway'
@@ -299,6 +301,9 @@
 .arrows-media
   display: none
 
+.card-arrow
+  display: none
+
 
 @media (max-width: 578px)
 
@@ -392,8 +397,92 @@
 
   .card__item:nth-of-type(6)
     grid-column: 1/ span 3
-     grid-row: 3/4
+    grid-row: 3/4
     padding-left: 0
+
+  .card__text
+    h2
+      line-height: 26px
+      width: 100%
+      margin-bottom: 24px
+
+  .card__minus
+    width: 30px
+    height: 30px
+
+    div 
+      width: 30px
+      height: 30px
+      align-items: center
+     
+
+  .card__plus 
+    width: 30px
+    height: 30px
+
+    div
+      width: 30px
+      height: 30px
+      align-items: center
+
+  .card__btn 
+    margin-bottom: 50px
+
+  .card__heading-block 
+    width: 100%
+
+  .card__description 
+    p:nth-of-type(1)
+      width: 95%
+
+  .border-top 
+    width: 100%
+
+  .interest 
+    padding: 50px 0
+
+  .header-cards
+    h2
+      font-size: 18px
+      line-height: 26px
+
+    div
+      display: none
+
+  .interes__card:nth-of-child(2)
+    display: none
+
+  .media-card
+    position: relative
+    margin: 0 auto
+
+    p:nth-type(1)
+    width: 80%
+
+  .card-arrow
+    display: block
+
+  .card-arrow:nth-of-type(1)
+    transform: rotate(180deg)
+    position: absolute
+    bottom: 50%
+    right: 0
+    margin-right: -20px
+
+  .card-arrow:nth-of-type(2)
+    position: absolute
+    bottom: 50%
+    margin-left: -20px
+   
+
+
+   
+
+    
+
+      
+  
+
 
   
    

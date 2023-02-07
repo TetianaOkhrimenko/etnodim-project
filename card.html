@@ -142,7 +142,7 @@
             <h2>Вишиванка з рослинним орнаментом Lito</h2>
             <div class="card__counter-item">
               <div><p>Колір: бежевий</p></div>
-              <div>
+              <div class="card__counter-box">
                 <div class="card__minus"><div>-</div></div>
                 <input class="card__counter" type="text" value="1" readonly />
                 <div class="card__plus"><div>+</div></div>
@@ -235,18 +235,34 @@
         </div>
 
         <div class="interest__cards cards">
-          <div class="interest__card">
-            <a href="#" title="Льняна вишиванка вільного крою Vintage Red"
-              ><img
-                src="./card-images/interest-1-image.png"
-                alt="Льняна вишиванка вільного крою Vintage Red"
-            /></a>
+          <div class="interest__card media-card">
+            <img
+              class="card-arrow"
+              src="./card-images/media/scroll-card.svg"
+              alt="Стрілка"
+            /><img
+              class="card-arrow"
+              src="./card-images/media/scroll-card.svg"
+              alt="Стрілка"
+            /><a href="#" title="Льняна вишиванка вільного крою Vintage Red"></a>
+              <picture>
+                <source
+                  srcset="./card-images/media/interest-1-media.png"
+                  media="(max-width: 375px)"
+                />
+                <source srcset="./card-images/interest-1-image.png" />
+                <img
+                  src="./card-images/interest-1-image.png"
+                  alt="Льняна вишиванка вільного крою Vintage Red"
+                />
+              </picture>
+            </a>
             <p class="description">
               Льняна вишиванка вільного крою Vintage Red
             </p>
             <p class="cards__price">4 200 грн.</p>
           </div>
-          <div class="interest__card">
+          <div class="interest__card media-unvisible">
             <div>
               <a href="#" title="Легка блузка вільного крою з орнаментом Indi"
                 ><img
@@ -259,7 +275,7 @@
             </p>
             <p class="cards__price">3 800 грн.</p>
           </div>
-          <div class="interest__card">
+          <div class="interest__card media-unvisible">
             <div>
               <a
                 href="#"
@@ -274,7 +290,7 @@
             </p>
             <p class="cards__price">4 200 грн.</p>
           </div>
-          <div class="interest__card">
+          <div class="interest__card media-unvisible">
             <a href="#" title="Лляна вишита сорочка чорного кольору SLOVO BLACK"
               ><img
                 src="./card-images/interest-4-image.png"
@@ -287,7 +303,7 @@
           </div>
         </div>
 
-        <div class="btn-wrapper">
+        <div class="btn-wrapper media-unvisible">
           <button class="interest__btn btn_active" type="button"></button>
           <button class="interest__btn" type="button"></button>
           <button class="interest__btn" type="button"></button>
