@@ -258,12 +258,13 @@ $color-red: #DA1F39
 
 
 .new-arrivals
-  padding: 0 80px 128px 80px
+  padding: 0 0 128px 80px
 
 .header-cards
   display: flex
   justify-content: space-between
   margin-bottom: 40px
+  padding-right: 80px
 
   h2
     @extend %font-heading
@@ -308,6 +309,14 @@ $color-red: #DA1F39
     align-items: center
     margin-bottom: 10px
 
+.new-arrivals__card:nth-of-type(4)
+  overflow: hidden
+
+  p:nth-of-type(1)
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: clip
+
 .capsuls
   background-image: url(./images/capsuls/capsuls-background.png)
   background-repeat: no-repeat
@@ -346,7 +355,7 @@ $color-red: #DA1F39
   padding: 17px 53px
 
 .discount
-  padding: 210px 80px 141px 80px
+  padding: 210px 0 141px 80px
 
 .discount__block
   background-image: url(./images/discount/card-3-background.png)
@@ -373,6 +382,15 @@ $color-red: #DA1F39
 
 .discount__price
     color: $color-red
+
+
+.discount__card:nth-of-type(4)
+  overflow: hidden
+
+  p:nth-of-type(1)
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: clip
 
 .philosophy
   padding-right: 217px

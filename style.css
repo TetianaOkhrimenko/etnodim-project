@@ -260,13 +260,14 @@ h1, h2, h3, p {
 }
 
 .new-arrivals {
-  padding: 0 80px 128px 80px;
+  padding: 0 0 128px 80px;
 }
 
 .header-cards {
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
+  padding-right: 80px;
 }
 .header-cards img {
   cursor: pointer;
@@ -320,6 +321,15 @@ h1, h2, h3, p {
   margin-bottom: 10px;
 }
 
+.new-arrivals__card:nth-of-type(4) {
+  overflow: hidden;
+}
+.new-arrivals__card:nth-of-type(4) p:nth-of-type(1) {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+}
+
 .capsuls {
   background-image: url(./images/capsuls/capsuls-background.png);
   background-repeat: no-repeat;
@@ -371,7 +381,7 @@ h1, h2, h3, p {
 }
 
 .discount {
-  padding: 210px 80px 141px 80px;
+  padding: 210px 0 141px 80px;
 }
 
 .discount__block {
@@ -401,6 +411,15 @@ h1, h2, h3, p {
 
 .discount__price {
   color: #DA1F39;
+}
+
+.discount__card:nth-of-type(4) {
+  overflow: hidden;
+}
+.discount__card:nth-of-type(4) p:nth-of-type(1) {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
 }
 
 .philosophy {
