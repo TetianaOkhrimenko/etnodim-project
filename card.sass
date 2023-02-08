@@ -313,6 +313,64 @@
   display: none
 
 
+
+@mixin hov
+  .menu-dropp-down
+     opacity: 1
+
+
+.header-wrapper
+  &:hover
+    +hov
+
+
+
+.menu-dropp-down
+  opacity: 0
+  height: 318px
+  display: grid
+  grid-template-columns: repeat(5, 1fr)
+  padding: 30px 80px
+  z-index: 1
+  position: absolute
+  transition: all 400ms ease-in-out
+
+  ul
+    list-style: none
+
+.list_main
+  font-family: $font-title
+  font-weight: 400
+  font-size: 18px
+  line-height: 26px
+  text-transform: uppercase
+  color: #9A9A9A
+
+  li
+    margin-bottom: 25px
+    cursor: pointer
+
+  li:hover
+     color: $color-primary
+
+.drop-list
+  +font(300, 14px, 166.19%, $color-primary)
+
+  li
+    margin-bottom: 18px
+    cursor: pointer
+
+  li:hover
+    color: $color-red
+    text-shadow: 0 0 0.65px #333, 0 0 0.65px #333
+    
+
+  
+ 
+
+
+
+
 @media (max-width: 768px)
 
   .arrows-media
