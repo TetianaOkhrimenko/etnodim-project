@@ -1075,10 +1075,12 @@ h1, h2, h3, p {
   height: 318px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  gap: 40px;
   padding: 30px 80px;
-  z-index: 1;
+  z-index: 2;
   position: absolute;
   transition: all 400ms ease-in-out;
+  background-color: #FFFFFF;
 }
 .menu-dropp-down ul {
   list-style: none;
