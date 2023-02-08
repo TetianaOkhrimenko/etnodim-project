@@ -1066,10 +1066,6 @@ h1, h2, h3, p {
   display: none;
 }
 
-.header-wrapper:hover .menu-dropp-down {
-  opacity: 1;
-}
-
 .menu-dropp-down {
   opacity: 0;
   height: 318px;
@@ -1084,39 +1080,6 @@ h1, h2, h3, p {
 }
 .menu-dropp-down ul {
   list-style: none;
-}
-
-.list_main {
-  font-family: "Dela Gothic One";
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 26px;
-  text-transform: uppercase;
-  color: #9A9A9A;
-}
-.list_main li {
-  margin-bottom: 25px;
-  cursor: pointer;
-}
-.list_main li:hover {
-  color: #000000;
-}
-
-.drop-list {
-  font-family: "Raleway";
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 166.19%;
-  font-feature-settings: "pnum" on, "lnum" on;
-  color: #000000;
-}
-.drop-list li {
-  margin-bottom: 18px;
-  cursor: pointer;
-}
-.drop-list li:hover {
-  color: #DA1F39;
-  text-shadow: 0 0 0.65px #333, 0 0 0.65px #333;
 }
 
 @media (max-width: 768px) {
@@ -1456,5 +1419,41 @@ h1, h2, h3, p {
   }
   .interest__card:nth-of-type(4) {
     display: none;
+  }
+}
+@media (min-width: 993px) {
+  .header-wrapper:hover .menu-dropp-down {
+    opacity: 1;
+  }
+  .list_main {
+    font-family: "Dela Gothic One";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #9A9A9A;
+  }
+  .list_main li {
+    margin-bottom: 25px;
+    cursor: pointer;
+  }
+  .list_main li:hover {
+    color: #000000;
+  }
+  .drop-list {
+    font-family: "Raleway";
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 166.19%;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: #000000;
+  }
+  li {
+    margin-bottom: 18px;
+    cursor: pointer;
+  }
+  li:hover {
+    color: #DA1F39;
+    text-shadow: 0 0 0.65px #333, 0 0 0.65px #333;
   }
 }/*# sourceMappingURL=card.css.map */
