@@ -33,7 +33,6 @@
 .card__item:nth-of-type(1)
   grid-column: 1/ span 2
   width: 720px
- 
 
 
 .card__item:nth-of-type(2)
@@ -314,7 +313,7 @@
   display: none
 
 
-@media (max-width: 578px)
+@media (max-width: 768px)
 
   .arrows-media
     display: flex
@@ -491,6 +490,124 @@
     position: absolute
     bottom: 50%
     margin-left: -20px
+
+
+@media (min-width: 768px) and (max-width: 992px)
+
+
+  .container
+    max-width: 100%
+    padding: 0 10px
+
+  .media-unvisible
+    display: none
+
+  .nav
+    padding: 8px 10px
+
+  .nav__content::after
+    content: ''
+    background: url(./card-images/media/burger-icon-media.svg)
+    width: 20px
+    height: 9px
+    display: inline-block
+    cursor: pointer
+    align-self: center
+
+  .nav__logo-content
+    grid-column: 2/3
+
+  .nav__list
+    grid-column: 3/4
+
+  .nav__list li:nth-child(4n) 
+    margin-right: 15px
+
+  .card__content 
+    grid-template-columns: repeat(4, 25%)
+    grid-auto-rows: auto
+    gap: 10px
+
+  .card__item:nth-of-type(1)
+    grid-row: 1/2
+    width: 100%
+
+    img
+      max-width: 100%
+
+  .card__item:nth-of-type(2)
+    grid-row: 2/3
+
+    img
+      max-width: 100%
+ 
+  .card__item:nth-of-type(3)
+    grid-row: 2/3
+
+    img
+      max-width: 100%
+
+  .card__item:nth-of-type(4)
+    grid-row: 3/4
+
+    img
+      max-width: 100%
+
+  .card__item:nth-of-type(5)
+    grid-row: 3/4
+
+    img
+      max-width: 100%
+   
+
+  .card__item:nth-of-type(6)
+    grid-row: 1/5
+    padding-left: 50px
+
+  .video 
+    width: 100%
+    height: 99%
+
+  .card__video-box 
+    width: 100%
+    height: auto
+
+  .card__text
+    h2
+      width: 85%
+
+  .interest 
+    padding: 50px 0 50px 30px
+
+    .cards
+      gap: 20px
+
+  .header-cards 
+    h2
+      font-size: 24px
+      line-height: 1.2
+
+
+  .interest__card:nth-of-type(2)
+    display: block
+    
+
+  .interest__card:nth-of-type(3)
+    display: block
+    overflow: hidden
+
+    p:nth-of-type(1)
+      white-space: nowrap
+      overflow: hidden
+      text-overflow: clip
+
+  
+
+    
+
+
+  
+
    
 
 
