@@ -718,6 +718,34 @@ h1, h2, h3, p {
     margin-right: 15px;
   }
 }
+@media (min-width: 769px) and (max-width: 992px) {
+  .container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+  .nav {
+    grid-template-columns: 40% 20% 40%;
+    padding: 25px 25px;
+  }
+  .nav__content li {
+    margin-right: 10px;
+  }
+  .nav__list li:nth-child(3) a {
+    display: none;
+  }
+  .nav__list li:nth-child(3)::after {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f095";
+    font-size: large;
+  }
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  .nav {
+    grid-template-columns: 40% 20% 40%;
+    padding: 25px 25px;
+  }
+}
 .main-card ul {
   padding: 10px 0 20px 80px;
 }
@@ -1349,30 +1377,6 @@ h1, h2, h3, p {
     max-width: 100%;
     padding: 0 10px;
   }
-  .media-unvisible {
-    display: none;
-  }
-  .nav {
-    padding: 8px 10px;
-  }
-  .nav__content::after {
-    content: "";
-    background: url(./card-images/media/burger-icon-media.svg);
-    width: 20px;
-    height: 9px;
-    display: inline-block;
-    cursor: pointer;
-    align-self: center;
-  }
-  .nav__logo-content {
-    grid-column: 2/3;
-  }
-  .nav__list {
-    grid-column: 3/4;
-  }
-  .nav__list li:nth-child(4n) {
-    margin-right: 15px;
-  }
   .card__content {
     grid-template-columns: repeat(4, 25%);
     grid-auto-rows: auto;
@@ -1422,7 +1426,16 @@ h1, h2, h3, p {
     height: auto;
   }
   .card__text h2 {
-    width: 85%;
+    width: 90%;
+  }
+  .card__heading-block {
+    width: 90%;
+  }
+  .card__description p:nth-of-type(1) {
+    width: 90%;
+  }
+  .border-top {
+    width: 90%;
   }
   .interest {
     padding: 50px 0 50px 30px;
@@ -1437,20 +1450,31 @@ h1, h2, h3, p {
   .interest__card:nth-of-type(2) {
     display: block;
   }
+  .interest__card:nth-of-type(4) {
+    display: none;
+  }
   .interest__card:nth-of-type(3) {
     display: block;
     overflow: hidden;
   }
-  .interest__card:nth-of-type(3) p:nth-of-type(1) {
+  .interest__card:nth-of-type(3) p {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: clip;
   }
 }
 @media (min-width: 993px) and (max-width: 1200px) {
-  .nav {
-    grid-template-columns: 40% 20% 40%;
-    padding: 25px 25px;
+  .card__text h2 {
+    width: 90%;
+  }
+  .card__heading-block {
+    width: 90%;
+  }
+  .card__description p:nth-of-type(1) {
+    width: 90%;
+  }
+  .border-top {
+    width: 90%;
   }
   .card__content {
     grid-template-columns: repeat(4, 25%);

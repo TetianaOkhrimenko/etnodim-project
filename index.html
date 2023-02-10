@@ -10,6 +10,11 @@
     />
     <title>ETNODIM - український бренд вишиванок</title>
 
+    <script
+      src="https://kit.fontawesome.com/3a59da4b6c.js"
+      crossorigin="anonymous"
+    ></script>
+
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -85,11 +90,19 @@
 
         <div class="block_flex">
           <div class="hero__block">
-            <img
-              class="hero__image-up"
-              src="./images/hero-image-1.png"
-              alt="Дівчина у вишиівнці"
-            />
+            <picture>
+              <source
+                srcset="./images/media/hero-media-1.png"
+                media="(max-width: 578px)"
+              />
+              <source srcset="./images/hero-image-1.png" />
+              <img
+                class="hero__image-up"
+                src="./images/hero-image-1.png"
+                alt="Дівчина у вишиівнці"
+              />
+            </picture>
+
             <h2>
               <span class="span_w">e</span>tnodim - магазин
               <span class="span_w">диза</span
@@ -100,11 +113,18 @@
               >
               одягу
             </h2>
-            <img
-              class="hero__image-down"
-              src="./images/hero-image-2.png"
-              alt="Дівчина у вишиівнці"
-            />
+            <picture>
+              <source
+                srcset="./images/media/hero-media-2.png"
+                media="(max-width: 578px)"
+              />
+              <source srcset="./images/hero-image-2.png" />
+              <img
+                class="hero__image-down"
+                src="./images/hero-image-2.png"
+                alt="Дівчина у вишиівнці"
+              />
+            </picture>
           </div>
         </div>
       </section>
