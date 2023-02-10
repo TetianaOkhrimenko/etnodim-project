@@ -684,6 +684,10 @@ h1, h2, h3, p {
   animation-iteration-count: infinite;
 }
 
+.card-arrow {
+  display: none;
+}
+
 @media (max-width: 768px) {
   img {
     max-width: 100%;
@@ -752,6 +756,48 @@ h1, h2, h3, p {
     background: none;
     background-clip: border-box;
     -webkit-text-fill-color: #000000;
+  }
+  .block_flex {
+    padding: 50px 35px;
+  }
+  .new-arrivals {
+    padding: 0;
+  }
+  .header-cards {
+    margin-bottom: 20px;
+  }
+  .header-cards h2 {
+    font-size: 18px;
+  }
+  .header-cards img {
+    display: none;
+  }
+  .media-card {
+    position: relative;
+    margin: 0 auto;
+  }
+  .new-arrivals__card:nth-of-type(4) {
+    overflow: visible;
+  }
+  .card-arrow {
+    display: block;
+  }
+  .card-arrow:nth-of-type(1) {
+    transform: rotate(180deg);
+    position: absolute;
+    bottom: 50%;
+    right: 0;
+    margin-right: -20px;
+  }
+  .card-arrow:nth-of-type(2) {
+    position: absolute;
+    bottom: 50%;
+    margin-left: -20px;
+  }
+  .new-arrivals__card:nth-of-type(4) p:nth-of-type(1) {
+    white-space: nowrap;
+    overflow: visible;
+    text-overflow: visible;
   }
 }
 @media (min-width: 769px) and (max-width: 992px) {

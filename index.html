@@ -146,7 +146,7 @@
         </div>
 
         <div class="new-arrivals__cards cards">
-          <div class="new-arrivals__card">
+          <div class="new-arrivals__card media-unvisible">
             <a href="#" title="Набір для створення вишивки Home Tree Green"
               ><img
                 src="./images/new-arrivals/card-1-image.png"
@@ -157,7 +157,7 @@
             </p>
             <p class="cards__price">2 120 грн.</p>
           </div>
-          <div class="new-arrivals__card">
+          <div class="new-arrivals__card media-unvisible">
             <div>
               <a href="#" title="Легка блузка вільного крою з орнаментом Indi"
                 ><img
@@ -170,7 +170,7 @@
             </p>
             <p class="cards__price">3 800 грн.</p>
           </div>
-          <div class="new-arrivals__card">
+          <div class="new-arrivals__card media-unvisible">
             <a href="#" title="Чоловіча лльна сорочка з вишивкою Sky"
               ><img
                 src="./images/new-arrivals/card-3-image.png"
@@ -179,12 +179,30 @@
             <p class="description">Чоловіча лльна сорочка з вишивкою Sky</p>
             <p class="cards__price">2 800 грн.</p>
           </div>
-          <div class="new-arrivals__card">
-            <a href="#" title="Легка блузка вільного крою з орнаментом Indi"
-              ><img
-                src="./images/new-arrivals/card-4-image.png"
-                alt="Легка блузка вільного крою з орнаментом Indi"
-            /></a>
+          <div class="new-arrivals__card media-card">
+            <img
+              class="card-arrow"
+              src="./card-images/media/scroll-card.svg"
+              alt="Стрілка"
+            /><img
+              class="card-arrow"
+              src="./card-images/media/scroll-card.svg"
+              alt="Стрілка"
+            />
+
+            <a href="#" title="Легка блузка вільного крою з орнаментом Indi">
+              <picture>
+                <source
+                  srcset="./images/media/card-4-media.png"
+                  media="(max-width: 375px)"
+                />
+                <source srcset="./images/new-arrivals/card-4-image.png" />
+                <img
+                  src="./images/new-arrivals/card-4-image.png"
+                  alt="Легка блузка вільного крою з орнаментом Indi"
+                />
+              </picture>
+            </a>
             <p class="description">
               Легка блузка вільного крою з орнаментом Indi
             </p>
