@@ -1258,7 +1258,9 @@ h1, h2, h3, p {
     display: none;
     z-index: 2;
     position: absolute;
-    width: 100%;
+    width: 85%;
+    padding: 8px 10px;
+    padding-height: 100%;
   }
   .menu-media a {
     text-decoration: none;
@@ -1270,6 +1272,12 @@ h1, h2, h3, p {
     color: #000000;
     position: absolute;
     z-index: 2;
+  }
+  .menu-media ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
   }
   .menu-media li {
     margin-bottom: 30px;
@@ -1307,6 +1315,7 @@ h1, h2, h3, p {
     line-height: 19px;
     font-feature-settings: "pnum" on, "lnum" on;
     color: #000000;
+    margin-top: 30px;
   }
   .menu-media__language div:hover {
     font-family: "Raleway";

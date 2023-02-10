@@ -516,7 +516,10 @@
     display: none
     z-index: 2
     position: absolute
-    width: 100%
+    width: 85%
+    padding: 8px 10px
+     height: 100%
+   
 
     a
       text-decoration: none
@@ -528,6 +531,13 @@
       color: $color-primary
       position: absolute
       z-index: 2
+      
+    ul
+      list-style-type: none
+      display: grid
+      grid-template-columns: 1fr
+      gap: 30px
+     
 
     li
       margin-bottom: 30px
@@ -563,6 +573,7 @@
     display: grid
     grid-template-columns: repeat(7, 1fr)
     +font(400, 16px, 19px, $color-primary)
+    margin-top: 30px
 
   .menu-media__language
     div:hover
@@ -572,6 +583,7 @@
     &:hover
       .menu-media
         display: block
+       
 
     &:hover
       .nav:
