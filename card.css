@@ -1082,6 +1082,10 @@ h1, h2, h3, p {
   list-style: none;
 }
 
+.menu-media {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .arrows-media {
     display: flex;
@@ -1250,6 +1254,81 @@ h1, h2, h3, p {
     margin-left: -20px;
   }
 }
+.menu-media {
+  background-color: #FFFFFF;
+  display: none;
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+}
+.menu-media a {
+  text-decoration: none;
+  font-family: "Dela Gothic One";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #000000;
+  position: absolute;
+  z-index: 2;
+}
+.menu-media li {
+  margin-bottom: 30px;
+}
+.menu-media a:hover {
+  color: #DA1F39;
+}
+.menu-media a:hover:after {
+  content: "";
+  background: url(./card-images/media/scroll-media.svg);
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  cursor: pointer;
+  margin-left: 13px;
+}
+
+.menu-media__logo {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 31px;
+}
+.menu-media__logo picture {
+  margin: 0 auto;
+}
+
+.close-menu {
+  cursor: pointer;
+  align-self: center;
+}
+
+.menu-media__language {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+}
+
+.menu-media__language div:hover {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+}
+
+.header-wrapper:hover .menu-media {
+  display: block;
+}
+.header-wrapper:hover {
+  .nav-opacity: 0;
+}
+
 @media (min-width: 769px) and (max-width: 992px) {
   .container {
     max-width: 100%;

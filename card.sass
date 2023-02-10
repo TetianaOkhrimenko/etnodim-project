@@ -328,6 +328,9 @@
   ul
     list-style: none    
 
+.menu-media
+  display: none
+
 
 @media (max-width: 768px)
 
@@ -507,6 +510,73 @@
     bottom: 50%
     margin-left: -20px
 
+
+.menu-media
+  background-color: #FFFFFF
+  display: none
+  z-index: 2
+  position: absolute
+  width: 100%
+
+  a
+    text-decoration: none
+    font-family: 'Dela Gothic One'
+    font-weight: 400
+    font-size: 18px
+    line-height: 26px
+    text-transform: uppercase
+    color: $color-primary
+    position: absolute
+    z-index: 2
+
+  li
+    margin-bottom: 30px
+
+  a:hover
+    color: $color-red
+
+  a:hover:after
+    content: ''
+    background: url(./card-images/media/scroll-media.svg)
+    width: 20px
+    height: 20px
+    display: inline-block
+    cursor: pointer
+    margin-left: 13px
+
+
+
+.menu-media__logo
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr
+  margin-bottom: 31px
+
+  picture
+    margin: 0 auto
+
+
+
+.close-menu
+  cursor: pointer
+  align-self: center
+
+.menu-media__language
+  display: grid
+  grid-template-columns: repeat(7, 1fr)
+  +font(400, 16px, 19px, $color-primary)
+
+.menu-media__language
+  div:hover
+    +font(700, 16px, 19px, $color-primary)
+
+.header-wrapper
+  &:hover
+    .menu-media
+      display: block
+
+  &:hover
+    .nav:
+      opacity: 0
 
 
 
