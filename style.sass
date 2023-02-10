@@ -596,6 +596,39 @@ $color-red: #DA1F39
 .animated_up
   animation: bounce 2s ease-in-out
   animation-iteration-count: infinite
+
+
+@media (max-width: 768px)
+
+  img
+    max-width: 100%
+
+  .container
+    max-width: 100%
+    padding: 0 10px
+
+  .media-unvisible
+    display: none
+  .nav
+    padding: 8px 10px
+
+  .nav__content::after
+    content: ''
+    background: url(./card-images/media/burger-icon-media.svg)
+    width: 20px
+    height: 9px
+    display: inline-block
+    cursor: pointer
+    align-self: center
+
+  .nav__logo-content
+    grid-column: 2/3
+
+  .nav__list
+    grid-column: 3/4
+
+  .nav__list li:nth-child(4n) 
+    margin-right: 15px
   
 
 
