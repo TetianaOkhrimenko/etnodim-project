@@ -88,44 +88,17 @@
           />
         </div>
 
-        <div class="block_flex">
-          <div class="hero__block">
-            <picture>
-              <source
-                srcset="./images/media/hero-media-1.png"
-                media="(max-width: 578px)"
-              />
-              <source srcset="./images/hero-image-1.png" />
-              <img
-                class="hero__image-up"
-                src="./images/hero-image-1.png"
-                alt="Дівчина у вишиівнці"
-              />
-            </picture>
-
-            <h2>
-              <span class="span_w">e</span>tnodim - магазин
-              <span class="span_w">диза</span
-              ><span class="span_w-b">й</span>нерських вишиванок
-              <span class="span_w">ручно</span>ї роботи та етні<span
-                class="span_w"
-                >чного</span
-              >
-              одягу
-            </h2>
-            <picture>
-              <source
-                srcset="./images/media/hero-media-2.png"
-                media="(max-width: 578px)"
-              />
-              <source srcset="./images/hero-image-2.png" />
-              <img
-                class="hero__image-down"
-                src="./images/hero-image-2.png"
-                alt="Дівчина у вишиівнці"
-              />
-            </picture>
-          </div>
+        <div class="hero__block">
+          <h2>
+            <span class="span_w">e</span>tnodim - магазин
+            <span class="span_w">диза</span
+            ><span class="span_w-b">й</span>нерських вишиванок
+            <span class="span_w">ручно</span>ї роботи та етні<span
+              class="span_w"
+              >чного</span
+            >
+            одягу
+          </h2>
         </div>
       </section>
 
@@ -266,12 +239,30 @@
         </div>
 
         <div class="cards">
-          <div class="discount__card">
-            <a href="#" title="Вишиванка для дівчинки Sakura"
-              ><img
-                src="./images/discount/card-1-image.png"
-                alt="Вишиванка для дівчинки Sakura"
-            /></a>
+          <div class="discount__card media-card">
+            <img
+              class="card-arrow"
+              src="./card-images/media/scroll-card.svg"
+              alt="Стрілка"
+            /><img
+              class="card-arrow"
+              src="./card-images/media/scroll-card.svg"
+              alt="Стрілка"
+            />
+
+            <a href="#" title="Вишиванка для дівчинки Sakura">
+              <picture>
+                <source
+                  srcset="./images/media/discount-card-1-media.png"
+                  media="(max-width: 375px)"
+                />
+                <source srcset="./images/discount/card-1-image.png" />
+                <img
+                  src="./images/discount/card-1-image.png"
+                  alt="Вишиванка для дівчинки Sakura"
+                />
+              </picture>
+            </a>
             <p class="description discount__description">
               Вишиванка для дівчинки Sakura
             </p>
@@ -280,7 +271,7 @@
               <p>1 827 грн.</p>
             </div>
           </div>
-          <div class="discount__card">
+          <div class="discount__card media-unvisible">
             <a href="#" title="Чоловічий світшот бордовий VMG2"
               ><img
                 src="./images/discount/card-2-image.png"
@@ -295,7 +286,7 @@
               <p>450 грн.</p>
             </div>
           </div>
-          <div class="discount__card">
+          <div class="discount__card media-unvisible">
             <div class="discount__block">
               <a
                 href="#"
@@ -313,7 +304,7 @@
               <p>3 582 грн.</p>
             </div>
           </div>
-          <div class="discount__card">
+          <div class="discount__card media-unvisible">
             <a
               href="#"
               title="Лляна сорочка молочного кольору з аплікацією MALVA"
@@ -334,10 +325,17 @@
 
       <section class="philosophy">
         <div class="philosophy__content">
-          <img
-            src="./images/philosophy/philosophy-image.png"
-            alt="Дівчина у білій сукні-вишиванці"
-          />
+          <picture>
+            <source
+              srcset="./images/media/philosophy-media.png"
+              media="(max-width: 768px)"
+            />
+            <source srcset="./images/philosophy/philosophy-image.png" />
+            <img
+              src="./images/philosophy/philosophy-image.png"
+              alt="Дівчина у білій сукні-вишиванці"
+            />
+          </picture>
         </div>
         <div class="philosophy__text">
           <p>etnodim</p>
@@ -359,25 +357,13 @@
         </div>
       </section>
 
-      <section class="central_flex">
-        <div class="central-block">
-          <img
-            class="central-block__image-down"
-            src="./images/central-block/central-1-image.png"
-            alt="Дівчина у вишиівнці"
-          />
-          <h2>
-            Речі, створені людьм<span class="span_w">и, які</span> піклуються
-            про інших, <span class="span_w">будуть</span>
-            <span class="span_w">служ</span><span class="span_w-b">и</span>ти
-            довгі роки.
-          </h2>
-          <img
-            class="central-block__image-up"
-            src="./images/central-block/central-2-image.png"
-            alt="Дівчина у вишиівнці"
-          />
-        </div>
+      <section class="central-block">
+        <h2>
+          Речі, створені людьм<span class="span_w">и, які</span> піклуються про
+          інших, <span class="span_w">будуть</span>
+          <span class="span_w">служ</span><span class="span_w-b">и</span>ти
+          довгі роки.
+        </h2>
       </section>
 
       <section class="drabyna">
@@ -469,6 +455,15 @@
               src="./images/pre-footer/arrow-to-header.svg"
               alt="Стрілка вверх"
           /></a>
+        </div>
+      </section>
+
+      <section class="test-block">
+        <div class="">
+          <h2>
+            Речі, створені людьми, які піклуються про інших, будуть служити
+            довгі роки.
+          </h2>
         </div>
       </section>
     </div>
