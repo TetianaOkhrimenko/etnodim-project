@@ -685,6 +685,10 @@ h1, h2, h3, p {
   animation-iteration-count: infinite;
 }
 
+.card-arrow {
+  display: none;
+}
+
 @media (max-width: 768px) {
   img {
     max-width: 100%;
@@ -716,6 +720,85 @@ h1, h2, h3, p {
   }
   .nav__list li:nth-child(4n) {
     margin-right: 15px;
+  }
+  .hero {
+    padding: 0;
+  }
+  .hero__content {
+    padding: 140px 0 0 15px;
+    background-image: url(./images/media/hero-main-media.png), linear-gradient(90deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%);
+    background-size: cover;
+  }
+  .hero__content h1 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 112.3%;
+    width: 67%;
+    margin-bottom: 5px;
+  }
+  .hero__content p {
+    margin-bottom: 30px;
+  }
+  .hero__block {
+    width: 100%;
+    height: 238px;
+  }
+  .hero__block h2 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140.3%;
+    padding-top: 69px;
+  }
+  .span_w {
+    color: #000000;
+  }
+  .span_w-b {
+    color: #000000;
+    background: none;
+    background-clip: border-box;
+    -webkit-text-fill-color: #000000;
+  }
+  .block_flex {
+    padding: 50px 35px;
+  }
+  .new-arrivals {
+    padding: 0;
+  }
+  .header-cards {
+    margin-bottom: 20px;
+  }
+  .header-cards h2 {
+    font-size: 18px;
+  }
+  .header-cards img {
+    display: none;
+  }
+  .media-card {
+    position: relative;
+    margin: 0 auto;
+  }
+  .new-arrivals__card:nth-of-type(4) {
+    overflow: visible;
+  }
+  .card-arrow {
+    display: block;
+  }
+  .card-arrow:nth-of-type(1) {
+    transform: rotate(180deg);
+    position: absolute;
+    bottom: 50%;
+    right: 0;
+    margin-right: -20px;
+  }
+  .card-arrow:nth-of-type(2) {
+    position: absolute;
+    bottom: 50%;
+    margin-left: -20px;
+  }
+  .new-arrivals__card:nth-of-type(4) p:nth-of-type(1) {
+    white-space: nowrap;
+    overflow: visible;
+    text-overflow: visible;
   }
 }
 @media (min-width: 769px) and (max-width: 992px) {

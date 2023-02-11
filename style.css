@@ -688,6 +688,10 @@ h1, h2, h3, p {
   display: none;
 }
 
+.capsuls-media {
+  display: none;
+}
+
 @media (max-width: 768px) {
   img {
     max-width: 100%;
@@ -761,7 +765,7 @@ h1, h2, h3, p {
     padding: 50px 35px;
   }
   .new-arrivals {
-    padding: 0;
+    padding: 0 0 50px 0;
   }
   .header-cards {
     margin-bottom: 20px;
@@ -795,9 +799,48 @@ h1, h2, h3, p {
     margin-left: -20px;
   }
   .new-arrivals__card:nth-of-type(4) p:nth-of-type(1) {
-    white-space: nowrap;
+    white-space: normal;
     overflow: visible;
     text-overflow: visible;
+    margin-bottom: 5px;
+    width: 85%;
+  }
+  .capsuls__content {
+    padding: 21px 10px 0 10px;
+  }
+  .capsuls__content img {
+    height: 100%;
+  }
+  .capsuls {
+    background-image: url(./images/media/capsuls-bg-media.png);
+    height: 240px;
+  }
+  .capsuls__text {
+    width: 100%;
+    margin-right: -1px;
+  }
+  .capsuls__text h2 {
+    font-size: 18px;
+    width: 203px;
+    padding: 0 5px;
+  }
+  .capsuls__text p:nth-of-type(1) {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .capsuls-media {
+    display: block;
+    text-align: center;
+    padding: 40px 26px 50px 26px;
+  }
+  .capsuls-media p {
+    font-family: "Raleway";
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 166.19%;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: #000000;
+    margin-bottom: 20px;
   }
 }
 @media (min-width: 769px) and (max-width: 992px) {
