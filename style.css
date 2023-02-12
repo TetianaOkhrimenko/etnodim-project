@@ -851,7 +851,6 @@ h1, h2, h3, p {
     height: 179px;
   }
   .drabyna__content {
-    background-image: url(./images/media/drabyna-2-media.png);
     width: 95%;
     height: 180px;
     margin-bottom: -20px;
@@ -963,6 +962,21 @@ h1, h2, h3, p {
     background-position: center;
     height: 300px;
   }
+  .drabyna {
+    height: 250px;
+  }
+  .drabyna__content {
+    height: 90%;
+  }
+  .address__content {
+    background-image: url(./images/address/address-2-image.png);
+  }
+}
+@media (min-width: 578px) {
+  .philosophy__content {
+    background-image: url(./images/philosophy/philosophy-background.png);
+    background-position: center;
+  }
 }
 @media (min-width: 578px) and (max-width: 768px) {
   .capsuls {
@@ -978,16 +992,29 @@ h1, h2, h3, p {
   }
   .drabyna__content {
     background-image: url(./images/drabyna/drabyna-2-image.png);
+    background-position: center;
     width: 90%;
-    height: 280px;
+    height: 90%;
     margin-bottom: -40px;
   }
   .drabyna-media {
     padding: 80px 15px 50px 15px;
   }
   .address__content {
-    background-image: url(./images/media/address-2-media.png);
+    background-image: url(./images/address/address-2-image.png);
     height: 532px;
+  }
+  .pre-footer__cards div:nth-child(1) {
+    justify-self: flex-end;
+  }
+  .pre-footer__cards div:nth-child(3) {
+    justify-self: flex-end;
+  }
+  .pre-footer__cards div:nth-child(2) {
+    justify-self: flex-start;
+  }
+  .pre-footer__cards div:nth-child(4) {
+    justify-self: flex-start;
   }
 }
 @media (min-width: 769px) and (max-width: 992px) {
