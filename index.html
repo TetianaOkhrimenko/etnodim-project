@@ -81,11 +81,19 @@
           <h1>більше ніж просто одяг</h1>
           <p>Нова літня колекція</p>
           <button type="button" class="btn">дивитись колекцію</button>
-          <img
-            class="hero__scroll animated"
-            src="./images/scroll-down.svg"
-            alt="Cтрілка вниз"
-          />
+
+          <picture>
+            <source
+              srcset="./images/media/arrow-down-media.svg"
+              media="(max-width: 578px)"
+            />
+            <source srcset="./images/scroll-down.svg" />
+            <img
+              class="hero__scroll animated"
+              src="./images/scroll-down.svg"
+              alt="Cтрілка вниз"
+            />
+          </picture>
         </div>
 
         <div class="hero__block">
@@ -418,10 +426,17 @@
         </div>
 
         <div class="address__content">
-          <img
-            src="./images/address/address-1-image.png"
-            alt="Магазин ETNODIM у Києві"
-          />
+          <picture>
+            <source
+              srcset="./images/media/address-1-media.png"
+              media="(max-width: 578px)"
+            />
+            <source srcset="./images/address/address-1-image.png" />
+            <img
+              src="./images/address/address-1-image.png"
+              alt="Магазин ETNODIM у Києві"
+            />
+          </picture>
         </div>
       </section>
 
@@ -434,49 +449,76 @@
         </p>
         <div class="pre-footer__cards">
           <div>
-            <img
-              src="./images/pre-footer/pre-footer-1-image.png"
-              alt="Дівчина у білій вишитій сукні"
-            />
+            <picture>
+              <source
+                srcset="./images/media/pre-footer-1-media.png"
+                media="(max-width: 375px)"
+              />
+              <source srcset="./images/pre-footer/pre-footer-1-image.png" />
+              <img
+                src="./images/pre-footer/pre-footer-1-image.png"
+                alt="Дівчина у білій вишитій сукні"
+              />
+            </picture>
           </div>
 
           <div>
-            <img
-              src="./images/pre-footer/pre-footer-2-image.png"
-              alt="Дівчина у блакитній вишитій сукні"
-            />
+            <picture>
+              <source
+                srcset="./images/media/pre-footer-2-media.png"
+                media="(max-width: 375px)"
+              />
+              <source srcset="./images/pre-footer/pre-footer-2-image.png" />
+              <img
+                src="./images/pre-footer/pre-footer-2-image.png"
+                alt="Дівчина у блакитній вишитій сукні"
+              />
+            </picture>
           </div>
 
           <div>
-            <img
-              src="./images/pre-footer/pre-footer-3-image.png"
-              alt="Дівчина у білій вишитій сукні"
-            />
+            <picture>
+              <source
+                srcset="./images/media/pre-footer-3-media.png"
+                media="(max-width: 375px)"
+              />
+              <source srcset="./images/pre-footer/pre-footer-3-image.png" />
+              <img
+                src="./images/pre-footer/pre-footer-3-image.png"
+                alt="Дівчина у білій вишитій сукні"
+              />
+            </picture>
           </div>
 
           <div>
-            <img
-              src="./images/pre-footer/pre-footer-4-image.png"
-              alt="Дівчина у білій вишитій сукні"
-            />
+            <picture>
+              <source
+                srcset="./images/media/pre-footer-4-media.png"
+                media="(max-width: 375px)"
+              />
+              <source srcset="./images/pre-footer/pre-footer-4-image.png" />
+              <img
+                src="./images/pre-footer/pre-footer-4-image.png"
+                alt="Дівчина у білій вишитій сукні"
+              />
+            </picture>
           </div>
         </div>
         <div>
-          <a href="/"
-            ><img
-              class="pre-footer__arrow animated_up"
-              src="./images/pre-footer/arrow-to-header.svg"
-              alt="Стрілка вверх"
-          /></a>
-        </div>
-      </section>
-
-      <section class="test-block">
-        <div class="">
-          <h2>
-            Речі, створені людьми, які піклуються про інших, будуть служити
-            довгі роки.
-          </h2>
+          <a href="/">
+            <picture>
+              <source
+                srcset="./images/media/arrow-up-media.svg"
+                media="(max-width: 578px)"
+              />
+              <source srcset="./images/pre-footer/arrow-to-header.svg" />
+              <img
+                class="pre-footer__arrow animated_up"
+                src="./images/pre-footer/arrow-to-header.svg"
+                alt="Стрілка вверх"
+              />
+            </picture>
+          </a>
         </div>
       </section>
     </div>
