@@ -317,19 +317,8 @@
 
 
 .menu-dropp-down
-  opacity: 0
-  height: 318px
-  display: grid
-  grid-template-columns: repeat(5, 1fr)
-  gap: 40px
-  padding: 30px 80px
-  z-index: 2
-  position: absolute
-  transition: all 400ms ease-in-out
-  background-color: #FFFFFF
-
-  ul
-    list-style: none    
+  display: none
+  
 
 .menu-media
   display: none
@@ -760,6 +749,21 @@
 
 
 @media (min-width: 993px)
+
+  .menu-dropp-down
+    opacity: 0
+    height: 318px
+    display: grid
+    grid-template-columns: repeat(5, 1fr)
+    gap: 40px
+    padding: 30px 80px
+    z-index: 2
+    position: absolute
+    transition: all 400ms ease-in-out
+    background-color: #FFFFFF
+
+    ul
+      list-style: none  
 
   @mixin hov
    .menu-dropp-down

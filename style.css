@@ -937,6 +937,7 @@ h1, h2, h3, p {
     height: 179px;
   }
   .drabyna__content {
+    background-position: center;
     width: 95%;
     height: 180px;
     margin-bottom: -20px;
