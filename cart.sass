@@ -2,7 +2,7 @@
 
 
 .cart
-  padding: 10px 0 20px 80px
+  padding: 10px 80px 20px 80px
 
   ul
     margin-bottom: 20px
@@ -29,7 +29,10 @@
 
 .cart__main
   display: grid
-  grid-template-columns: 1fr 1fr 1fr
+  grid-template-columns: 52% 40% 8%
+
+.cart__delete
+  justify-self: flex-end
 
 
 .cart__image-box
@@ -39,6 +42,7 @@
   h3
     +font(600, 18px, 21px, $color-primary)
     margin-bottom: 40px
+    width: 68%
 
 .cart__text-box
   div:nth-child(1)
@@ -56,6 +60,7 @@
 .cart__price-box
   display: grid
   grid-template-columns: 1fr 1fr 1fr
+  
   
   p:nth-child(1)
     +font(300, 14px, 166.19%, $color-primary)

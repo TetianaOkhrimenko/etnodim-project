@@ -1328,7 +1328,7 @@ h1, h2, h3, p {
   }
 }
 .cart {
-  padding: 10px 0 20px 80px;
+  padding: 10px 80px 20px 80px;
 }
 .cart ul {
   margin-bottom: 20px;
@@ -1366,7 +1366,11 @@ h1, h2, h3, p {
 
 .cart__main {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 52% 40% 8%;
+}
+
+.cart__delete {
+  justify-self: flex-end;
 }
 
 .cart__image-box {
@@ -1382,6 +1386,7 @@ h1, h2, h3, p {
   font-feature-settings: "pnum" on, "lnum" on;
   color: #000000;
   margin-bottom: 40px;
+  width: 68%;
 }
 
 .cart__text-box div:nth-child(1) {
