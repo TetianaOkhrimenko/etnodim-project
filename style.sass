@@ -582,6 +582,63 @@ $color-red: #DA1F39
 .drabyna-media
   display: none
 
+.footer
+  padding: 70px 0 70px 80px
+  background-color: #F4F4F4
+
+.footer__logo
+  display: flex
+  justify-content: center
+  margin-bottom: 40px
+
+.footer__block
+  display: grid
+  grid-template-columns: 9% 30% 30% 20%
+
+  li
+    list-style: none
+    +font(300, 14px, 166.19%, $color-primary)
+    margin-bottom: 10px
+
+  a
+    +font(300, 14px, 166.19%, $color-primary)
+    text-decoration: none
+
+  div:nth-child(1)
+    li:nth-child(3)
+      margin-bottom: 30px
+
+    li:nth-child(4)
+      a
+        +font(700, 14px, 166.19%, $color-red)
+
+
+  div:nth-child(2)
+    li:nth-child(3)
+      margin-bottom: 30px
+
+    li:nth-child(4)
+      a
+        +font(700, 14px, 166.19%, $color-red)
+
+  div:nth-child(3)
+    li:nth-child(1)
+      text-decoration: underline
+
+  div:nth-child(4)
+    li:nth-child(1)
+      text-decoration: underline
+      
+    li:nth-child(2)
+      margin-bottom: 64px
+
+
+  div:nth-child(4)
+    img
+      margin-right: 20px
+      cursor: pointer
+   
+
 
     
 
