@@ -280,6 +280,7 @@ $color-red: #DA1F39
 .description
   +font(300, 14px, 166.19%, $color-primary)
   margin-bottom: 10px
+  height: 46px
 
 
 
@@ -353,9 +354,6 @@ $color-red: #DA1F39
   justify-content: center
   align-items: center
   margin-bottom: 10px
-
-.discount__description
-    margin-bottom: 30px
 
 
 .discount__text
@@ -606,9 +604,16 @@ $color-red: #DA1F39
     +font(300, 14px, 166.19%, $color-primary)
     margin-bottom: 10px
 
+  
+
   a
     +font(300, 14px, 166.19%, $color-primary)
     text-decoration: none
+    transition: all 200ms ease-in-out
+
+  a:hover
+    color: $color-red
+    text-shadow: 0 0 0.65px #333, 0 0 0.65px #333
 
   div:nth-child(1)
     li:nth-child(3)
@@ -762,6 +767,10 @@ $color-red: #DA1F39
     text-overflow: visible
     margin-bottom: 5px
     width: 85%
+
+  .description
+    margin-bottom: 5px
+    height: auto
 
   .capsuls__content
     padding: 21px 10px 0 10px
@@ -962,7 +971,12 @@ $color-red: #DA1F39
     padding: 20px 10px 0 10px
 
   .footer__logo 
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
     margin-bottom: 20px
+
+    a 
+      grid-column: 2/3
 
   .footer__block 
     grid-template-columns: 24% 38% 38%
@@ -1017,10 +1031,6 @@ $color-red: #DA1F39
     background-image: url(./images/address/address-2-image.png)
    
 
-@media (min-width: 578px)
-  .philosophy__content
-    background-image: url(./images/philosophy/philosophy-background.png)
-    background-position: center
 
   
   
@@ -1047,6 +1057,10 @@ $color-red: #DA1F39
 
   .drabyna-media
     padding: 80px 15px 50px 15px
+
+  .philosophy__content
+    background-image: url(./images/philosophy/philosophy-background.png)
+    background-position: center
 
 
   .address__content 
