@@ -540,7 +540,7 @@ $color-red: #DA1F39
 
 .pre-footer
   text-align: center
-  padding: 130px 80px
+  padding: 130px 80px 0 80px
  
 
   p:nth-of-type(1)
@@ -555,14 +555,20 @@ $color-red: #DA1F39
     
 
   h2
-     @extend %font-heading
-     margin-bottom: 10px
+    @extend %font-heading
+    margin-bottom: 10px
+
+  div:nth-of-type(2)
+    margin-bottom: -20px
 
 
 .pre-footer__cards
   display: grid
   grid-template-columns: repeat(4, 1fr)
   gap: 52px
+
+  img
+    max-width: 100%
 
 .pre-footer__arrow
   transition: 300ms all ease-in
@@ -628,7 +634,7 @@ $color-red: #DA1F39
   div:nth-child(4)
     li:nth-child(1)
       text-decoration: underline
-      
+
     li:nth-child(2)
       margin-bottom: 64px
 
@@ -637,6 +643,9 @@ $color-red: #DA1F39
     img
       margin-right: 20px
       cursor: pointer
+
+.footer-media-item
+  display: none
    
 
 
@@ -927,7 +936,7 @@ $color-red: #DA1F39
 
 
   .pre-footer 
-    padding: 50px 0
+    padding: 50px 0 0 0
     
     p:nth-of-type(1)
       font-size: 10px
@@ -944,6 +953,37 @@ $color-red: #DA1F39
   .pre-footer__cards 
     grid-template-columns: 1fr 1fr
     gap: 20px
+
+  .pre-footer__arrow 
+    margin-top: 27px
+
+
+  .footer
+    padding: 20px 10px 0 10px
+
+  .footer__logo 
+    margin-bottom: 20px
+
+  .footer__block 
+    grid-template-columns: 24% 38% 38%
+    margin-bottom: 20px
+
+    div:nth-child(1)
+      margin-bottom: 20px
+
+    div:nth-child(3)
+      grid-column: 1/4
+      grid-row: 2/3
+
+    div:nth-child(4)
+      grid-column: 3/4
+      grid-row: 1/2
+
+  .footer-media-item
+    display: block
+    +font(300, 14px, 166.19%, $color-primary)
+
+
 
       
 
@@ -1165,6 +1205,10 @@ $color-red: #DA1F39
     h2
       font-size: 28px
 
+    div:nth-of-type(2)
+      margin-bottom: -70px
+
+
   .pre-footer__cards 
     grid-template-columns: 1fr 1fr
     gap: 20px
@@ -1180,6 +1224,17 @@ $color-red: #DA1F39
 
     div:nth-child(4) 
       justify-self: flex-start
+
+  .pre-footer__arrow
+    margin-top: 40px
+
+  .footer 
+    padding: 50px 20px
+
+  .footer__block 
+    grid-template-columns: 13% 23% 37% 37%
+ 
+
 
 
 
