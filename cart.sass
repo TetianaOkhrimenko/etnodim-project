@@ -1,0 +1,96 @@
+@import './style.sass'
+
+
+.cart
+  padding: 10px 0 20px 80px
+
+  ul
+    margin-bottom: 20px
+
+  li
+    display: inline
+    +font(600, 12px, 166.19%, $color-primary)
+
+  li:nth-of-type(5) 
+    +font(300, 12px, 20px, $color-primary)
+
+
+  a
+    color: $color-primary
+    text-decoration: none
+
+.card__list-dash 
+    display: inline-block
+    width: 25px
+    height: 0.7px
+    background-color: $color-primary
+    vertical-align: middle
+    margin: 0 5px
+
+.cart__main
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr
+
+
+.cart__image-box
+  display: grid
+  grid-template-columns: 142px 1fr
+  gap: 30px
+  h3
+    +font(600, 18px, 21px, $color-primary)
+    margin-bottom: 40px
+
+.cart__text-box
+  div:nth-child(1)
+    margin-bottom: 10px
+  span:nth-child(1)
+    display: inline-block
+    +font(300, 12px, 20px, $color-primary)
+    width: 41px
+    margin-right: 47px
+
+  span:nth-child(2)
+     display: inline-block
+     +font(600, 12px, 166.4%, $color-primary)
+
+.cart__price-box
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr
+  
+  p:nth-child(1)
+    +font(300, 14px, 166.19%, $color-primary)
+    margin-bottom: 54px
+
+  p:nth-child(2)
+     +font(600, 12px, 166.4%, $color-primary)
+
+.cart__counter-box
+  display: grid
+  grid-template-columns: 21px 21px 21px
+  
+
+.card__minus
+  cursor: pointer
+  background-color: #F4F4F4
+  width: 21px
+
+  div
+    display: flex
+    justify-content: center
+
+.card__counter
+  border: none
+  outline: none
+  width: 10px
+  justify-self: center
+ 
+
+.card__plus
+  cursor: pointer
+  background-color: #F4F4F4
+  width: 21px
+
+  div
+    display: flex
+    justify-content: center
+   
