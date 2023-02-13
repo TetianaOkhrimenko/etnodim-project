@@ -1053,6 +1053,15 @@ h1, h2, h3, p {
     width: 100%;
     margin: 50px auto;
   }
+  .span_w {
+    color: #000000;
+  }
+  .span_w-b {
+    background: none;
+    background-clip: border-box;
+    -webkit-background-clip: border-box;
+    -webkit-text-fill-color: #000000;
+  }
   .new-arrivals {
     padding: 0;
   }
@@ -1101,10 +1110,85 @@ h1, h2, h3, p {
   .central-block {
     width: 100%;
   }
+  .drabyna__content {
+    background-position: right;
+    width: 90%;
+    height: 90%;
+    margin-bottom: -40px;
+  }
+  .drabyna__text {
+    width: 50%;
+    height: 100%;
+    padding: 50px;
+  }
+  .address {
+    padding: 100px 0 0 40px;
+  }
+  .address__text h2 {
+    font-size: 28px;
+  }
+  .address__content {
+    height: 100%;
+  }
+  .address__content img {
+    max-width: 100%;
+    margin-left: -40px;
+  }
+  .pre-footer {
+    padding: 50px 30px;
+  }
+  .pre-footer h2 {
+    font-size: 28px;
+  }
+  .pre-footer__cards {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .pre-footer__cards div:nth-child(1) {
+    justify-self: flex-end;
+  }
+  .pre-footer__cards div:nth-child(2) {
+    justify-self: flex-start;
+  }
+  .pre-footer__cards div:nth-child(3) {
+    justify-self: flex-end;
+  }
+  .pre-footer__cards div:nth-child(4) {
+    justify-self: flex-start;
+  }
 }
 @media (min-width: 993px) and (max-width: 1200px) {
   .nav {
     grid-template-columns: 40% 20% 40%;
     padding: 25px 25px;
+  }
+  .hero {
+    padding: 43px 0 0 68px;
+  }
+  .new-arrivals {
+    overflow: hidden;
+  }
+  .capsuls {
+    height: 450px;
+  }
+  .capsuls__content img {
+    max-width: 100%;
+    height: 100%;
+  }
+  .discount {
+    overflow: hidden;
+  }
+  .philosophy {
+    padding-right: 0;
+    gap: 40px;
+  }
+  .drabyna__content {
+    background-position: right;
+  }
+  .address__content img {
+    max-width: 100%;
+  }
+  .pre-footer img {
+    max-width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
