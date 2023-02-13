@@ -1607,7 +1607,10 @@ h1, h2, h3, p {
 }
 
 .interest {
-  padding: 90px 0 130px 80px;
+  padding: 90px 0 0 80px;
+}
+.interest div:nth-child(4) {
+  margin-bottom: -20px;
 }
 
 .interest__cards {
@@ -1831,7 +1834,10 @@ h1, h2, h3, p {
     width: 100%;
   }
   .interest {
-    padding: 50px 0;
+    padding: 50px 0 0 0;
+  }
+  .header-cards {
+    padding-right: 0;
   }
   .header-cards h2 {
     font-size: 18px;
@@ -2010,7 +2016,7 @@ h1, h2, h3, p {
     width: 90%;
   }
   .interest {
-    padding: 50px 0 50px 30px;
+    padding: 50px 0 0 30px;
   }
   .interest .cards {
     gap: 20px;
