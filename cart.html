@@ -73,108 +73,129 @@
       </nav>
     </header>
 
-    <section class="cart">
-      <ul>
-        <li><a href="./">Головна</a><span class="card__list-dash"></span></li>
-        <li><a href="#">Жінкам</a><span class="card__list-dash"></span></li>
-        <li>
-          <a href="#">Жіночі вишиванки</a><span class="card__list-dash"></span>
-        </li>
-        <li>
-          <a href="#">Вишиванка з рослинним орнаментом Lito</a
-          ><span class="card__list-dash"></span>
-        </li>
-        <li><a href="#">Кошик</a></li>
-      </ul>
+    <div class="container">
+      <section class="cart">
+        <ul>
+          <li><a href="./">Головна</a><span class="card__list-dash"></span></li>
+          <li><a href="#">Жінкам</a><span class="card__list-dash"></span></li>
+          <li>
+            <a href="#">Жіночі вишиванки</a
+            ><span class="card__list-dash"></span>
+          </li>
+          <li>
+            <a href="#">Вишиванка з рослинним орнаментом Lito</a
+            ><span class="card__list-dash"></span>
+          </li>
+          <li><a href="#">Кошик</a></li>
+        </ul>
 
-      <div class="cart__main">
-        <div class="cart__image-box">
-          <div>
-            <img
-              src="./images/cart-image.svg"
-              alt="Вишиванка з рослинним орнаментом Lito"
-            />
-          </div>
+        <div class="cart__main">
+          <div class="cart__image-box">
+            <div>
+              <img
+                src="./images/cart-image.svg"
+                alt="Вишиванка з рослинним орнаментом Lito"
+              />
+            </div>
 
-          <div>
-            <h3>Вишиванка з рослинним орнаментом Lito</h3>
+            <div>
+              <h3>Вишиванка з рослинним орнаментом Lito</h3>
 
-            <div class="cart__text-box">
-              <div>
-                <span>Колір:</span>
-                <span>бежевий</span>
+              <div class="cart__text-box">
+                <div>
+                  <span>Колір:</span>
+                  <span>бежевий</span>
+                </div>
+                <div>
+                  <span>Розмір:</span>
+                  <span>42-44 | S</span>
+                </div>
               </div>
-              <div>
-                <span>Розмір:</span>
-                <span>42-44 | S</span>
+              <div class="cart__media-box">
+                <div class="cart__counter-box">
+                  <div class="card__minus"><div>-</div></div>
+                  <input
+                    class="card__counter"
+                    type="text"
+                    value="1"
+                    readonly=""
+                  />
+                  <div class="card__plus"><div>+</div></div>
+                </div>
+                <p>2 800 грн.</p>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="cart__price-box">
-          <div>
-            <p>Ціна</p>
-            <p>2 800 грн.</p>
-          </div>
+          <div class="cart__price-box">
+            <div>
+              <p>Ціна</p>
+              <p>2 800 грн.</p>
+            </div>
 
-          <div>
-            <p>Кількість</p>
-            <div class="cart__counter-box">
-              <div class="card__minus"><div>-</div></div>
-              <input class="card__counter" type="text" value="1" readonly="" />
-              <div class="card__plus"><div>+</div></div>
+            <div>
+              <p>Кількість</p>
+              <div class="cart__counter-box">
+                <div class="card__minus"><div>-</div></div>
+                <input
+                  class="card__counter"
+                  type="text"
+                  value="1"
+                  readonly=""
+                />
+                <div class="card__plus"><div>+</div></div>
+              </div>
+            </div>
+
+            <div>
+              <p>Сума</p>
+              <p>2 800 грн.</p>
             </div>
           </div>
 
+          <div class="cart__delete">
+            <picture>
+              <source
+                srcset="./images/media/delete-media.svg"
+                media="(max-width: 578px)"
+              />
+              <source srcset="./images/delete-icon.svg" />
+              <img src="./images/delete-icon.svg" alt="Видалити" />
+            </picture>
+          </div>
+        </div>
+
+        <div class="cart__info">
           <div>
-            <p>Сума</p>
-            <p>2 800 грн.</p>
+            <div class="dash-long"></div>
+            <div class="cart__amount">
+              <p>До сплати</p>
+              <p>2 800 грн.</p>
+            </div>
+          </div>
+
+          <div class="cart_btn-box">
+            <button class="btn" type="button">оформити замовлення</button>
+            <a href="#">продовжити покупки</a>
           </div>
         </div>
 
-        <div class="cart__delete">
-          <picture>
-            <source
-              srcset="./images/media/delete-media.svg"
-              media="(max-width: 578px)"
-            />
-            <source srcset="./images/delete-icon.svg" />
-            <img src="./images/delete-icon.svg" alt="Видалити" />
-          </picture>
+        <div class="cart__text">
+          <p>
+            Не турбуйтесь якщо вам не підійде розмір, всі моделі мають різний
+            крій: одні маломірні, інші повнорозмірні. На кожен наш товар
+            розповсюджується гарантія, яка дозволяє обміняти або повернути річ
+            протягом 31го дня після дати покупки.
+          </p>
+          <br />
+          <p>
+            Таке повернення можливе за умови, якщо товар не був у використанні.
+            Зверніться до менеджера магазину, він надасть вам більш детальну
+            інформацію :)
+          </p>
         </div>
-      </div>
-
-      <div class="cart__info">
-        <div>
-          <div class="dash-long"></div>
-          <div class="cart__amount">
-            <p>До сплати</p>
-            <p>2 800 грн.</p>
-          </div>
-        </div>
-
-        <div class="cart_btn-box">
-          <button class="btn" type="button">оформити замовлення</button>
-          <a href="#">продовжити покупки</a>
-        </div>
-      </div>
-
-      <div class="cart__text">
-        <p>
-          Не турбуйтесь якщо вам не підійде розмір, всі моделі мають різний
-          крій: одні маломірні, інші повнорозмірні. На кожен наш товар
-          розповсюджується гарантія, яка дозволяє обміняти або повернути річ
-          протягом 31го дня після дати покупки.
-        </p>
-        <br />
-        <p>
-          Таке повернення можливе за умови, якщо товар не був у використанні.
-          Зверніться до менеджера магазину, він надасть вам більш детальну
-          інформацію :)
-        </p>
-      </div>
-    </section>
+      </section>
+    </div>
 
     <footer class="footer">
       <div class="footer__logo">

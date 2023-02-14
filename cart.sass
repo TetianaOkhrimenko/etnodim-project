@@ -1,5 +1,7 @@
 @import './common.sass'
 
+.cart__media-box
+  display: none
 
 .cart
   padding: 10px 80px 174px 80px
@@ -228,5 +230,71 @@
   .cart__text 
     p
       width: 100%
+
+  .cart__text-box
+    div:nth-child(2)
+      margin-bottom: 14px
+
+  .cart__media-box
+    display: grid
+    grid-template-columns: 50% 50%
+    gap: 34px
+
+    .cart__counter-box 
+      grid-template-columns: 30px 30px 30px
+      height: 30px
+      
+
+    .card__minus
+      width: 30px
+      height: 30px
+      display: flex
+      align-items: center
+      justify-content: center
+      
+    .card__plus
+      width: 30px
+      height: 30px
+      display: flex
+      align-items: center
+      justify-content: center
+
+    .card__counter
+      justify-self: center
+      
+
+    p
+      +font(600, 12px, 166.4%, $color-primary)
+      align-self: center
+
+@media (min-width: 769px) and (max-width: 992px)
+
+  .cart 
+    padding: 10px 40px 50px 40px
+
+  .cart__image-box 
+    h3 
+      width: 100%
+
+  .cart__info 
+    grid-template-columns: 30% 70%
+
+    div:nth-of-type(2)
+      gap: 10px
+
+  .dash-long 
+    width: 100%
+
+@media (min-width: 993px) and (max-width: 1200px)
+  .cart__info 
+    grid-template-columns: 40% 60%
+
+  
+   
+
+   
+ 
+
+
 
 

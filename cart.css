@@ -46,6 +46,15 @@ h1, h2, h3, p {
   padding: 0;
 }
 
+.header-cards h2 {
+  font-family: "Dela Gothic One";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 140.3%;
+  text-transform: uppercase;
+  color: #000000;
+}
+
 .container {
   max-width: 1500px;
 }
@@ -177,6 +186,19 @@ h1, h2, h3, p {
 .arrow-right {
   transform: rotate(180deg);
   margin-left: 20px;
+}
+
+.header-cards {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  padding-right: 80px;
+}
+.header-cards img {
+  cursor: pointer;
+}
+.header-cards div {
+  align-self: center;
 }
 
 .cards {
@@ -431,6 +453,10 @@ h1, h2, h3, p {
     margin: 0 auto;
   }
 }
+.cart__media-box {
+  display: none;
+}
+
 .cart {
   padding: 10px 80px 174px 80px;
 }
@@ -725,5 +751,65 @@ h1, h2, h3, p {
   }
   .cart__text p {
     width: 100%;
+  }
+  .cart__text-box div:nth-child(2) {
+    margin-bottom: 14px;
+  }
+  .cart__media-box {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 34px;
+  }
+  .cart__media-box .cart__counter-box {
+    grid-template-columns: 30px 30px 30px;
+    height: 30px;
+  }
+  .cart__media-box .card__minus {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cart__media-box .card__plus {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cart__media-box .card__counter {
+    justify-self: center;
+  }
+  .cart__media-box p {
+    font-family: "Raleway";
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 166.4%;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: #000000;
+    align-self: center;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  .cart {
+    padding: 10px 40px 50px 40px;
+  }
+  .cart__image-box h3 {
+    width: 100%;
+  }
+  .cart__info {
+    grid-template-columns: 30% 70%;
+  }
+  .cart__info div:nth-of-type(2) {
+    gap: 10px;
+  }
+  .dash-long {
+    width: 100%;
+  }
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  .cart__info {
+    grid-template-columns: 40% 60%;
   }
 }/*# sourceMappingURL=cart.css.map */
