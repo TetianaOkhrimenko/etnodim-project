@@ -47,11 +47,11 @@
 
             <div class="cart__text-box">
               <div>
-                <span>Колір</span>
+                <span>Колір:</span>
                 <span>бежевий</span>
               </div>
               <div>
-                <span>Розмір</span>
+                <span>Розмір:</span>
                 <span>42-44 | S</span>
               </div>
             </div>
@@ -80,8 +80,45 @@
         </div>
 
         <div class="cart__delete">
-          <img src="./images/delete-icon.svg" alt="Видалити" />
+          <picture>
+            <source
+              srcset="./images/media/delete-media.svg"
+              media="(max-width: 578px)"
+            />
+            <source srcset="./images/delete-icon.svg" />
+            <img src="./images/delete-icon.svg" alt="Видалити" />
+          </picture>
         </div>
+      </div>
+
+      <div class="cart__info">
+        <div>
+          <div class="dash-long"></div>
+          <div class="cart__amount">
+            <p>До сплати</p>
+            <p>2 800 грн.</p>
+          </div>
+        </div>
+
+        <div class="cart_btn-box">
+          <button class="btn" type="button">оформити замовлення</button>
+          <a href="#">продовжити покупки</a>
+        </div>
+      </div>
+
+      <div class="cart__text">
+        <p>
+          Не турбуйтесь якщо вам не підійде розмір, всі моделі мають різний
+          крій: одні маломірні, інші повнорозмірні. На кожен наш товар
+          розповсюджується гарантія, яка дозволяє обміняти або повернути річ
+          протягом 31го дня після дати покупки.
+        </p>
+        <br />
+        <p>
+          Таке повернення можливе за умови, якщо товар не був у використанні.
+          Зверніться до менеджера магазину, він надасть вам більш детальну
+          інформацію :)
+        </p>
       </div>
     </section>
   </body>

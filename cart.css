@@ -1328,7 +1328,7 @@ h1, h2, h3, p {
   }
 }
 .cart {
-  padding: 10px 80px 20px 80px;
+  padding: 10px 80px 174px 80px;
 }
 .cart ul {
   margin-bottom: 20px;
@@ -1366,7 +1366,8 @@ h1, h2, h3, p {
 
 .cart__main {
   display: grid;
-  grid-template-columns: 52% 40% 8%;
+  grid-template-columns: 56% 36% 8%;
+  margin-bottom: 60px;
 }
 
 .cart__delete {
@@ -1391,9 +1392,9 @@ h1, h2, h3, p {
 
 .cart__text-box div:nth-child(1) {
   margin-bottom: 10px;
+  display: flex;
 }
 .cart__text-box span:nth-child(1) {
-  display: inline-block;
   font-family: "Raleway";
   font-weight: 300;
   font-size: 12px;
@@ -1404,7 +1405,6 @@ h1, h2, h3, p {
   margin-right: 47px;
 }
 .cart__text-box span:nth-child(2) {
-  display: inline-block;
   font-family: "Raleway";
   font-weight: 600;
   font-size: 12px;
@@ -1412,10 +1412,31 @@ h1, h2, h3, p {
   font-feature-settings: "pnum" on, "lnum" on;
   color: #000000;
 }
+.cart__text-box div:nth-child(2) {
+  display: flex;
+}
+.cart__text-box div:nth-child(2) span:nth-of-type(2) {
+  display: flex;
+  margin-right: 5px;
+}
+.cart__text-box div:nth-child(2) span:nth-of-type(2)::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  margin: 5px;
+  border-right: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
 
 .cart__price-box {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+}
+.cart__price-box div {
+  justify-self: center;
 }
 .cart__price-box p:nth-child(1) {
   font-family: "Raleway";
@@ -1465,4 +1486,137 @@ h1, h2, h3, p {
 .card__plus div {
   display: flex;
   justify-content: center;
+}
+
+.cart__info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 58px;
+}
+.cart__info div:nth-of-type(2) {
+  justify-self: flex-end;
+  display: flex;
+  gap: 39px;
+}
+.cart__info div:nth-of-type(2) a {
+  align-self: center;
+  font-family: "Raleway";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.dash-long {
+  width: 305px;
+  height: 0.7px;
+  background-color: #000000;
+  margin-bottom: 20px;
+}
+
+.cart__amount {
+  display: flex;
+  gap: 128px;
+}
+.cart__amount p:nth-child(1) {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+}
+.cart__amount p:nth-child(2) {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #DA1F39;
+}
+
+.cart__text p {
+  font-family: "Raleway";
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 20px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .cart {
+    padding: 10px 10px 50px 10px;
+  }
+  .cart li:nth-of-type(1) {
+    display: none;
+  }
+  .cart li:nth-of-type(2) {
+    display: none;
+  }
+  .cart li:nth-of-type(3) {
+    display: none;
+  }
+  .cart li:nth-of-type(4) {
+    display: flex;
+  }
+  .cart li:nth-of-type(4)::before {
+    content: "";
+    background: url(./card-images/media/scroll-left-media.svg);
+    width: 20px;
+    height: 19px;
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  .cart li:nth-of-type(5) {
+    display: none;
+  }
+  .cart__main {
+    grid-template-columns: 95% 5%;
+    margin-bottom: 50px;
+  }
+  .card__list-dash {
+    display: none;
+  }
+  .cart__price-box {
+    display: none;
+  }
+  .cart__image-box {
+    gap: 20px;
+  }
+  .cart__image-box h3 {
+    font-family: "Raleway";
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: #000000;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .cart_btn-box {
+    flex-direction: column;
+  }
+  .cart__info {
+    grid-template-columns: 1fr;
+    margin-bottom: 51px;
+  }
+  .cart__info div:nth-of-type(1) {
+    margin-bottom: 30px;
+  }
+  .cart__info div:nth-of-type(2) {
+    justify-self: flex-start;
+    gap: 30px;
+  }
+  .cart__info div:nth-of-type(2) a {
+    align-self: flex-start;
+  }
+  .cart__text p {
+    width: 100%;
+  }
 }/*# sourceMappingURL=cart.css.map */

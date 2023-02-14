@@ -1910,6 +1910,7 @@ h1, h2, h3, p {
   .menu-media__logo {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    height: 54px;
     margin-bottom: 31px;
   }
   .menu-media__logo picture {

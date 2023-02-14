@@ -2,7 +2,7 @@
 
 
 .cart
-  padding: 10px 80px 20px 80px
+  padding: 10px 80px 174px 80px
 
   ul
     margin-bottom: 20px
@@ -29,7 +29,8 @@
 
 .cart__main
   display: grid
-  grid-template-columns: 52% 40% 8%
+  grid-template-columns: 56% 36% 8%
+  margin-bottom: 60px
 
 .cart__delete
   justify-self: flex-end
@@ -47,19 +48,39 @@
 .cart__text-box
   div:nth-child(1)
     margin-bottom: 10px
+    display: flex
+
   span:nth-child(1)
-    display: inline-block
     +font(300, 12px, 20px, $color-primary)
     width: 41px
     margin-right: 47px
 
   span:nth-child(2)
-     display: inline-block
      +font(600, 12px, 166.4%, $color-primary)
+
+  div:nth-child(2)
+     display: flex
+     span:nth-of-type(2)
+       display: flex
+       margin-right: 5px
+     span:nth-of-type(2)::after
+       content: ""
+       width: 5px
+       height: 5px
+       margin: 5px
+       border-right: 1px solid #000000
+       border-bottom: 1px solid #000000
+       transform: rotate(45deg)
+       cursor: pointer
 
 .cart__price-box
   display: grid
   grid-template-columns: 1fr 1fr 1fr
+  text-align: center
+
+  div
+    justify-self: center
+
   
   
   p:nth-child(1)
@@ -98,4 +119,112 @@
   div
     display: flex
     justify-content: center
-   
+
+.cart__info
+  display: grid
+  grid-template-columns: 1fr 1fr
+  margin-bottom: 58px
+
+  div:nth-of-type(2)
+    justify-self: flex-end
+    display: flex
+
+    gap: 39px
+
+    a
+      align-self: center
+      +font(600, 14px, 16px, $color-primary)
+      text-decoration: underline
+      text-transform: uppercase
+
+.dash-long
+  width: 305px
+  height: 0.7px
+  background-color: $color-primary
+  margin-bottom: 20px
+
+.cart__amount
+  display: flex
+  gap: 128px
+
+  p:nth-child(1)
+    +font(700, 16px, 19px, $color-primary)
+
+  p:nth-child(2)
+    +font(700, 16px, 19px, $color-red)
+
+
+.cart__text
+  p
+    +font(300, 12px, 20px, $color-primary)
+    width: 50%
+
+@media (max-width: 768px)
+  .cart
+     padding: 10px 10px 50px 10px
+     li:nth-of-type(1)
+       display: none
+
+     li:nth-of-type(2)
+       display: none
+
+     li:nth-of-type(3)
+       display: none
+
+     li:nth-of-type(4)
+       display: flex
+
+     li:nth-of-type(4)::before
+       content: ""
+       background: url(./card-images/media/scroll-left-media.svg)
+       width: 20px
+       height: 19px
+       display: inline-block
+       margin-right: 10px
+       cursor: pointer
+
+
+     li:nth-of-type(5)
+       display: none
+
+  .cart__main 
+    grid-template-columns: 95% 5%
+    margin-bottom: 50px
+
+
+  .card__list-dash
+     display: none
+
+  .cart__price-box
+     display: none
+
+  .cart__image-box 
+    gap: 20px
+    h3
+      +font(600, 16px, 19px, $color-primary)
+      width: 100%
+      margin-bottom: 20px
+
+  .cart_btn-box 
+    flex-direction: column
+  
+  .cart__info 
+    grid-template-columns: 1fr
+    margin-bottom: 51px
+
+    div:nth-of-type(1)
+      margin-bottom: 30px 
+
+    div:nth-of-type(2) 
+      justify-self: flex-start
+      gap: 30px
+
+    div:nth-of-type(2) 
+      a
+        align-self: flex-start
+
+  .cart__text 
+    p
+      width: 100%
+
+
