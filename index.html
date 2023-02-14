@@ -19,64 +19,61 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+    <header>
+      <nav class="nav" id="navigation">
+        <ul class="nav__content">
+          <li class="catalog media-unvisible">
+            <a href="#" title="Відкрити каталог">Каталог</a>
+          </li>
+          <li class="media-unvisible">
+            <a href="./card.html" title="Знижки">Знижки</a>
+          </li>
+          <li class="media-unvisible"><a href="#" title="Блог">Блог</a></li>
+          <li class="media-unvisible">
+            <a href="#" title="Про нас">Про нас</a>
+          </li>
+        </ul>
+
+        <div class="nav__logo-content">
+          <a href="/" title="Інтернет-магазин виробів ручної роботи - ЕтноДім">
+            <picture>
+              <source
+                srcset="./card-images/media/etnodim-logo-media.svg"
+                media="(max-width: 375px)"
+              />
+              <source srcset="./images/etnodim-logo.svg" />
+              <img
+                src="./images/etnodim-logo.svg"
+                alt="Інтернет-магазин ЕтноДім"
+              />
+            </picture>
+          </a>
+        </div>
+
+        <ul class="nav__list">
+          <li class="nav__item media-unvisible">UA</li>
+          <li class="nav__item media-unvisible">
+            <img src="./images/money-icon.svg" alt="Гривня" />
+          </li>
+          <li class="media-unvisible">
+            <a href="tel:+380978889292">+38 097 888 92 92</a>
+          </li>
+          <li>
+            <a href="#" title="Пошук"
+              ><img src="./images/search-icon.svg" alt="Пошук"
+            /></a>
+          </li>
+          <li>
+            <a href="./cart.html" title="Корзина"
+              ><img src="./images/cart-icon.svg" alt="Корзина"
+            /></a>
+            <div class="badge"><p class="badge__number">1</p></div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
     <div class="container">
-      <header>
-        <nav class="nav" id="navigation">
-          <ul class="nav__content">
-            <li class="catalog media-unvisible">
-              <a href="#" title="Відкрити каталог">Каталог</a>
-            </li>
-            <li class="media-unvisible">
-              <a href="./card.html" title="Знижки">Знижки</a>
-            </li>
-            <li class="media-unvisible"><a href="#" title="Блог">Блог</a></li>
-            <li class="media-unvisible">
-              <a href="#" title="Про нас">Про нас</a>
-            </li>
-          </ul>
-
-          <div class="nav__logo-content">
-            <a
-              href="/"
-              title="Інтернет-магазин виробів ручної роботи - ЕтноДім"
-            >
-              <picture>
-                <source
-                  srcset="./card-images/media/etnodim-logo-media.svg"
-                  media="(max-width: 375px)"
-                />
-                <source srcset="./images/etnodim-logo.svg" />
-                <img
-                  src="./images/etnodim-logo.svg"
-                  alt="Інтернет-магазин ЕтноДім"
-                />
-              </picture>
-            </a>
-          </div>
-
-          <ul class="nav__list">
-            <li class="nav__item media-unvisible">UA</li>
-            <li class="nav__item media-unvisible">
-              <img src="./images/money-icon.svg" alt="Гривня" />
-            </li>
-            <li class="media-unvisible">
-              <a href="tel:+380978889292">+38 097 888 92 92</a>
-            </li>
-            <li>
-              <a href="#" title="Пошук"
-                ><img src="./images/search-icon.svg" alt="Пошук"
-              /></a>
-            </li>
-            <li>
-              <a href="./cart.html" title="Корзина"
-                ><img src="./images/cart-icon.svg" alt="Корзина"
-              /></a>
-              <div class="badge"><p class="badge__number">1</p></div>
-            </li>
-          </ul>
-        </nav>
-      </header>
-
       <section class="hero">
         <div class="hero__content">
           <h1>більше ніж просто одяг</h1>
@@ -194,33 +191,37 @@
       </section>
     </div>
 
-    <section class="capsuls">
-      <div class="capsuls__content">
-        <div class="capsuls__text">
-          <p>etnodim</p>
-          <h2>капсульна колекція до дня вишиванки</h2>
-          <p class="media-unvisible">
-            Лімітована серія нетипових вишиванок Etnodim створена спеціально до
-            Дня вишиванки. Поряд із традиційною вишивкою на виробах з’явилися
-            «нові символи».
-          </p>
-          <button class="btn capsuls__btn media-unvisible">переглянути</button>
+    <div class="container-capsuls">
+      <section class="capsuls">
+        <div class="capsuls__content">
+          <div class="capsuls__text">
+            <p>etnodim</p>
+            <h2>капсульна колекція до дня вишиванки</h2>
+            <p class="media-unvisible">
+              Лімітована серія нетипових вишиванок Etnodim створена спеціально
+              до Дня вишиванки. Поряд із традиційною вишивкою на виробах
+              з’явилися «нові символи».
+            </p>
+            <button class="btn capsuls__btn media-unvisible">
+              переглянути
+            </button>
+          </div>
+          <div>
+            <picture>
+              <source
+                srcset="./images/media/capsuls-media.png"
+                media="(max-width: 578px)"
+              />
+              <source srcset="./images/capsuls/capsuls-image.png" />
+              <img
+                src="./images/capsuls/capsuls-image.png"
+                alt="Дівчина у вишиванці"
+              />
+            </picture>
+          </div>
         </div>
-        <div>
-          <picture>
-            <source
-              srcset="./images/media/capsuls-media.png"
-              media="(max-width: 578px)"
-            />
-            <source srcset="./images/capsuls/capsuls-image.png" />
-            <img
-              src="./images/capsuls/capsuls-image.png"
-              alt="Дівчина у вишиванці"
-            />
-          </picture>
-        </div>
-      </div>
-    </section>
+      </section>
+    </div>
     <div class="capsuls-media">
       <p>
         Лімітована серія нетипових вишиванок Etnodim створена спеціально до Дня
