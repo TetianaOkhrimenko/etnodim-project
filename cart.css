@@ -1373,6 +1373,9 @@ h1, h2, h3, p {
 .cart__delete {
   justify-self: flex-end;
 }
+.cart__delete img {
+  cursor: pointer;
+}
 
 .cart__image-box {
   display: grid;

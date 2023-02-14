@@ -1328,6 +1328,10 @@ h1, h2, h3, p {
     max-width: 100%;
   }
 }
+.container {
+  max-width: 1440px;
+}
+
 .main-card ul {
   padding: 10px 0 20px 80px;
 }
@@ -1873,7 +1877,7 @@ h1, h2, h3, p {
     position: absolute;
     width: 85%;
     padding: 8px 10px;
-    height: 100%;
+    height: auto;
   }
   .menu-media a {
     text-decoration: none;
@@ -2163,5 +2167,10 @@ h1, h2, h3, p {
   .drop-list li:hover {
     color: #DA1F39;
     text-shadow: 0 0 0.65px #333, 0 0 0.65px #333;
+  }
+}
+@media (min-width: 1440px) {
+  .container {
+    margin: 0 auto;
   }
 }/*# sourceMappingURL=card.css.map */

@@ -1,5 +1,8 @@
 @import './style.sass'
 
+.container
+  max-width: 1440px
+
 
 .main-card
   ul
@@ -491,7 +494,7 @@
     position: absolute
     width: 85%
     padding: 8px 10px
-    height: 100%
+    height: auto
    
 
     a
@@ -800,6 +803,12 @@
     li:hover
       color: $color-red
       text-shadow: 0 0 0.65px #333, 0 0 0.65px #333
+
+
+@media (min-width: 1440px)
+  .container
+    margin: 0 auto
+    
 
 
   
