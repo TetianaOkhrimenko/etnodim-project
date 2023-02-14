@@ -55,7 +55,7 @@ h1, h2, h3, p {
   color: #EFEFEF;
 }
 
-.pre-footer h2, .address__text h2, .drabyna__text h2, .central-block h2, .philosophy__text h2, .capsuls__text h2, .header-cards h2, .hero__block h2 {
+.pre-footer h2, .address__text h2, .drabyna__text h2, .central-block h2, .philosophy__text h2, .capsuls__text h2, .hero__block h2, .header-cards h2 {
   font-family: "Dela Gothic One";
   font-weight: 400;
   font-size: 36px;
@@ -195,6 +195,19 @@ h1, h2, h3, p {
 .arrow-right {
   transform: rotate(180deg);
   margin-left: 20px;
+}
+
+.header-cards {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  padding-right: 80px;
+}
+.header-cards img {
+  cursor: pointer;
+}
+.header-cards div {
+  align-self: center;
 }
 
 .cards {
@@ -508,19 +521,6 @@ h1, h2, h3, p {
 
 .new-arrivals {
   padding: 0 0 128px 80px;
-}
-
-.header-cards {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 40px;
-  padding-right: 80px;
-}
-.header-cards img {
-  cursor: pointer;
-}
-.header-cards div {
-  align-self: center;
 }
 
 .new-arrivals__card:nth-of-type(2) div {
@@ -930,15 +930,6 @@ h1, h2, h3, p {
   }
   .new-arrivals {
     padding: 0 0 50px 0;
-  }
-  .header-cards {
-    margin-bottom: 20px;
-  }
-  .header-cards h2 {
-    font-size: 18px;
-  }
-  .header-cards img {
-    display: none;
   }
   .media-card {
     position: relative;
