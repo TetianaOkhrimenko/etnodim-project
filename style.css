@@ -529,20 +529,6 @@ h1, h2, h3, p {
   padding: 0 0 128px 80px;
 }
 
-.new-arrivals__card img {
-  transition: box-shadow 400ms ease-in-out;
-}
-.new-arrivals__card div {
-  transition: box-shadow 400ms ease-in-out;
-}
-
-.new-arrivals__card:hover img {
-  box-shadow: 0 10px 15px rgba(33, 33, 33, 0.2);
-}
-.new-arrivals__card:hover div {
-  box-shadow: 0 10px 15px rgba(33, 33, 33, 0.2);
-}
-
 .new-arrivals__card:nth-of-type(2) div {
   background-image: url(./images/new-arrivals/card-2-background.png);
   background-repeat: no-repeat;
@@ -641,20 +627,6 @@ h1, h2, h3, p {
 
 .discount__price {
   color: #DA1F39;
-}
-
-.discount__card img {
-  transition: box-shadow 400ms ease-in-out;
-}
-.discount__card div {
-  transition: box-shadow 400ms ease-in-out;
-}
-
-.discount__card:hover img {
-  box-shadow: 0 10px 15px rgba(33, 33, 33, 0.2);
-}
-.discount__card:hover div {
-  box-shadow: 0 10px 15px rgba(33, 33, 33, 0.2);
 }
 
 .discount__card:nth-of-type(4) {
@@ -1192,6 +1164,32 @@ h1, h2, h3, p {
   }
   .pre-footer__arrow {
     margin-top: 27px;
+  }
+}
+@media (min-width: 769px) {
+  .new-arrivals__card img {
+    transition: box-shadow 400ms ease-in-out;
+  }
+  .new-arrivals__card div {
+    transition: box-shadow 400ms ease-in-out;
+  }
+  .new-arrivals__card:hover img {
+    box-shadow: 0 10px 15px rgba(33, 33, 33, 0.2);
+  }
+  .new-arrivals__card:hover div {
+    box-shadow: 0 10px 15px rgba(33, 33, 33, 0.2);
+  }
+  .discount__card img {
+    transition: box-shadow 400ms ease-in-out;
+  }
+  .discount__card div {
+    transition: box-shadow 400ms ease-in-out;
+  }
+  .discount__card:hover img {
+    box-shadow: 0 10px 15px rgba(33, 33, 33, 0.2);
+  }
+  .discount__card:hover:nth-child(3) div:nth-child(1) {
+    box-shadow: 0 10px 15px rgba(33, 33, 33, 0.2);
   }
 }
 @media (min-width: 425px) and (max-width: 578px) {

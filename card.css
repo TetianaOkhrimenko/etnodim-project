@@ -763,20 +763,6 @@ h1, h2, h3, p {
   margin-bottom: 30px;
 }
 
-.interest__card img {
-  transition: box-shadow 400ms ease-in-out;
-}
-.interest__card div {
-  transition: box-shadow 400ms ease-in-out;
-}
-
-.interest__card:hover img {
-  box-shadow: 0 10px 15px rgba(33, 33, 33, 0.2);
-}
-.interest__card:hover div {
-  box-shadow: 0 10px 15px rgba(33, 33, 33, 0.2);
-}
-
 .interest__card:nth-of-type(3) div {
   background-image: url(./card-images/interest-3-background.png);
   background-repeat: no-repeat;
@@ -1094,6 +1080,20 @@ h1, h2, h3, p {
   }
   .header-wrapper:hover .nav {
     opacity: 0;
+  }
+}
+@media (min-width: 769px) {
+  .interest__card img {
+    transition: box-shadow 400ms ease-in-out;
+  }
+  .interest__card div {
+    transition: box-shadow 400ms ease-in-out;
+  }
+  .interest__card:hover img {
+    box-shadow: 0 10px 15px rgba(33, 33, 33, 0.2);
+  }
+  .interest__card:hover div {
+    box-shadow: 0 10px 15px rgba(33, 33, 33, 0.2);
   }
 }
 @media (min-width: 769px) and (max-width: 992px) {
