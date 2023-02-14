@@ -252,7 +252,10 @@ $color-red: #DA1F39
 .footer__block
   display: grid
   grid-template-columns: 9% 30% 30% 20%
-
+  img
+    transition: transform 200ms ease-in-out
+  img:hover
+    transform: scale(1.2)
   li
     list-style: none
     +font(300, 14px, 166.19%, $color-primary)

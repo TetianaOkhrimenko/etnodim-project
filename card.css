@@ -255,6 +255,12 @@ h1, h2, h3, p {
   display: grid;
   grid-template-columns: 9% 30% 30% 20%;
 }
+.footer__block img {
+  transition: transform 200ms ease-in-out;
+}
+.footer__block img:hover {
+  transform: scale(1.2);
+}
 .footer__block li {
   list-style: none;
   font-family: "Raleway";
@@ -755,6 +761,20 @@ h1, h2, h3, p {
 
 .interest__cards {
   margin-bottom: 30px;
+}
+
+.interest__card img {
+  transition: box-shadow 400ms ease-in-out;
+}
+.interest__card div {
+  transition: box-shadow 400ms ease-in-out;
+}
+
+.interest__card:hover img {
+  box-shadow: 0 10px 15px rgba(33, 33, 33, 0.2);
+}
+.interest__card:hover div {
+  box-shadow: 0 10px 15px rgba(33, 33, 33, 0.2);
 }
 
 .interest__card:nth-of-type(3) div {

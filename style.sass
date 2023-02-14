@@ -61,7 +61,16 @@
 .new-arrivals
   padding: 0 0 128px 80px
 
-
+.new-arrivals__card
+  img
+    transition: box-shadow 400ms ease-in-out
+  div
+    transition: box-shadow 400ms ease-in-out
+.new-arrivals__card:hover
+  img
+    box-shadow: 0 10px 15px rgb(33 33 33 / 20%)
+  div
+    box-shadow: 0 10px 15px rgb(33 33 33 / 20%)
 
 .new-arrivals__card:nth-of-type(2) 
   div
@@ -146,6 +155,16 @@
 .discount__price
     color: $color-red
 
+.discount__card
+   img
+    transition: box-shadow 400ms ease-in-out
+   div
+    transition: box-shadow 400ms ease-in-out
+.discount__card:hover
+   img
+    box-shadow: 0 10px 15px rgb(33 33 33 / 20%)
+   div
+    box-shadow: 0 10px 15px rgb(33 33 33 / 20%)
 
 .discount__card:nth-of-type(4)
   overflow: hidden
@@ -346,6 +365,11 @@
 
   img
     max-width: 100%
+    cursor: pointer
+    transition: transform 400ms ease-in-out
+
+  img:hover
+    transform: scale(1.1)
 
 .pre-footer__arrow
   transition: 300ms all ease-in

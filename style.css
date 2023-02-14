@@ -263,6 +263,12 @@ h1, h2, h3, p {
   display: grid;
   grid-template-columns: 9% 30% 30% 20%;
 }
+.footer__block img {
+  transition: transform 200ms ease-in-out;
+}
+.footer__block img:hover {
+  transform: scale(1.2);
+}
 .footer__block li {
   list-style: none;
   font-family: "Raleway";
@@ -523,6 +529,20 @@ h1, h2, h3, p {
   padding: 0 0 128px 80px;
 }
 
+.new-arrivals__card img {
+  transition: box-shadow 400ms ease-in-out;
+}
+.new-arrivals__card div {
+  transition: box-shadow 400ms ease-in-out;
+}
+
+.new-arrivals__card:hover img {
+  box-shadow: 0 10px 15px rgba(33, 33, 33, 0.2);
+}
+.new-arrivals__card:hover div {
+  box-shadow: 0 10px 15px rgba(33, 33, 33, 0.2);
+}
+
 .new-arrivals__card:nth-of-type(2) div {
   background-image: url(./images/new-arrivals/card-2-background.png);
   background-repeat: no-repeat;
@@ -621,6 +641,20 @@ h1, h2, h3, p {
 
 .discount__price {
   color: #DA1F39;
+}
+
+.discount__card img {
+  transition: box-shadow 400ms ease-in-out;
+}
+.discount__card div {
+  transition: box-shadow 400ms ease-in-out;
+}
+
+.discount__card:hover img {
+  box-shadow: 0 10px 15px rgba(33, 33, 33, 0.2);
+}
+.discount__card:hover div {
+  box-shadow: 0 10px 15px rgba(33, 33, 33, 0.2);
 }
 
 .discount__card:nth-of-type(4) {
@@ -870,6 +904,11 @@ h1, h2, h3, p {
 }
 .pre-footer__cards img {
   max-width: 100%;
+  cursor: pointer;
+  transition: transform 400ms ease-in-out;
+}
+.pre-footer__cards img:hover {
+  transform: scale(1.1);
 }
 
 .pre-footer__arrow {
