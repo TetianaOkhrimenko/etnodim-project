@@ -450,6 +450,9 @@ h1, h2, h3, p {
     content: "\f095";
     font-size: large;
   }
+  .nav__list li:nth-child(4n) {
+    margin-right: 20px;
+  }
   .footer {
     padding: 50px 20px;
   }
