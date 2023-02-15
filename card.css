@@ -780,6 +780,7 @@ h1, h2, h3, p {
 
 .interest__card:nth-of-type(4) {
   overflow: hidden;
+  white-space: nowrap;
 }
 .interest__card:nth-of-type(4) p:nth-of-type(1) {
   white-space: nowrap;

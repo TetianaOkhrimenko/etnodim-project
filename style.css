@@ -546,6 +546,7 @@ h1, h2, h3, p {
 
 .new-arrivals__card:nth-of-type(4) {
   overflow: hidden;
+  white-space: nowrap;
 }
 .new-arrivals__card:nth-of-type(4) p:nth-of-type(1) {
   white-space: nowrap;
@@ -634,10 +635,10 @@ h1, h2, h3, p {
 
 .discount__card:nth-of-type(4) {
   overflow: hidden;
+  white-space: nowrap;
 }
 .discount__card:nth-of-type(4) p:nth-of-type(1) {
   white-space: nowrap;
-  overflow: hidden;
   text-overflow: clip;
 }
 
@@ -1284,7 +1285,7 @@ h1, h2, h3, p {
     -webkit-text-fill-color: #000000;
   }
   .new-arrivals {
-    padding: 0;
+    padding: 0 0 40px 0;
   }
   .new-arrivals__cards {
     overflow: hidden;
@@ -1314,7 +1315,7 @@ h1, h2, h3, p {
     line-height: 12px;
   }
   .discount {
-    padding: 150px 0 0 0;
+    padding: 150px 0 40px 0;
     overflow: hidden;
   }
   .philosophy {
