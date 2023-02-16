@@ -25,7 +25,7 @@
     <header>
       <nav class="nav" id="navigation">
         <ul class="nav__content">
-          <li class="catalog media-unvisible">
+          <li class="catalog media-unvisible catalog-active">
             <a href="./vyshyvankas.html" title="Відкрити каталог">Каталог</a>
           </li>
           <li class="media-unvisible">
@@ -70,7 +70,9 @@
             <a href="./cart.html" title="Корзина"
               ><img src="./images/cart-icon.svg" alt="Корзина"
             /></a>
-            <div class="badge"><p class="badge__number">1</p></div>
+            <div class="badge catalog-badge">
+              <p class="badge__number">1</p>
+            </div>
           </li>
         </ul>
       </nav>
@@ -1056,6 +1058,23 @@
           </div>
         </section>
       </div>
+    </div>
+
+    <div>
+      <a href="./vyshyvankas.html">
+        <picture>
+          <source
+            srcset="./images/media/arrow-up-media.svg"
+            media="(max-width: 578px)"
+          />
+          <source srcset="./images/pre-footer/arrow-to-header.svg" />
+          <img
+            class="pre-footer__arrow animated_up"
+            src="./images/pre-footer/arrow-to-header.svg"
+            alt="Стрілка вверх"
+          />
+        </picture>
+      </a>
     </div>
 
     <footer class="footer">

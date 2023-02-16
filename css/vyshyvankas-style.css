@@ -33,15 +33,31 @@
     transform: translateY(-15px);
   }
 }
+.nav__list .catalog-badge {
+  width: 0;
+  height: 14px;
+  bottom: 0;
+}
+
 .animated {
   animation: bounce 2s ease-in-out;
   animation-iteration-count: infinite;
+}
+
+.pre-footer__arrow {
+  transition: 300ms all ease-in;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: -20px;
 }
 
 .nav {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 25px 80px;
+}
+.nav ul {
+  margin: 0;
 }
 .nav a {
   text-decoration: none;

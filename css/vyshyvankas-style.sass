@@ -68,15 +68,32 @@ $color-red: #DA1F39
   line-height: $line-height
   font-feature-settings: 'pnum' on, 'lnum' on
   color: $color
+
+.nav__list
+  .catalog-badge
+    width: 0 
+    height: 14px
+    bottom: 0
+  
   
 .animated
   animation: bounce 2s ease-in-out
   animation-iteration-count: infinite
 
+.pre-footer__arrow 
+  transition: 300ms all ease-in
+  display: block
+  margin: 0 auto
+  margin-bottom: -20px
+
+
 .nav
   display: grid
   grid-template-columns: repeat(3, 1fr)
   padding: 25px 80px
+
+  ul
+    margin: 0
 
   a
     text-decoration: none
