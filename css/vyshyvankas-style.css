@@ -511,13 +511,10 @@ ul {
     padding: 8px 10px;
   }
   .nav__content::after {
-    content: "";
-    background: url(./card-images/media/burger-icon-media.svg);
-    width: 20px;
-    height: 9px;
-    display: inline-block;
-    cursor: pointer;
-    align-self: center;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f0c9";
+    font-size: large;
   }
   .nav__logo-content {
     grid-column: 2/3;
