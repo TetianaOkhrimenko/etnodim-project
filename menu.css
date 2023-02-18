@@ -223,4 +223,5 @@ details[open] div:nth-child(3) {
 }
 .details-cur svg:hover path {
   fill: #DA1F39;
+  stroke-width: 4;
 }/*# sourceMappingURL=menu.css.map */
