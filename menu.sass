@@ -1,0 +1,238 @@
+@font-face
+  font-family: 'Dela Gothic One'
+  src: url(./fonts/DelaGothicOne/DelaGothicOne/DelaGothicOne-Regular.woff2) format(woff2)
+  src: url(./fonts/DelaGothicOne/DelaGothicOne/DelaGothicOne-Regular.woff) format(woff)
+  font-weight: 400
+
+@font-face
+  font-family: 'Raleway'
+  src: url(./fonts/RalewayFont/RalewayFont/Raleway-Bold.woff) format(woff)
+  font-weight: 700
+
+@font-face
+  font-family: 'Raleway'
+  src: url(./fonts/RalewayFont/RalewayFont/Raleway-SemiBold.woff) format(woff)
+  font-weight: 600
+
+@font-face
+  font-family: 'Raleway'
+  src: url(./fonts/RalewayFont/RalewayFont/Raleway-Regular.woff) format(woff)
+  
+  font-weight: 400
+
+@font-face
+  font-family: 'Raleway'
+  src: url(./fonts/RalewayFont/RalewayFont/Raleway-Light.woff) format(woff)
+  font-weight: 300
+
+
+@keyframes bounce 
+  0%,
+  20%,
+  50%,
+  80%,
+  100% 
+    transform: translateY(0)
+
+  40% 
+    transform: translateY(-30px)
+
+  60% 
+    transform: translateY(-15px)
+  
+
+
+
+*
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+
+h1, h2, h3, p
+  margin: 0
+  padding: 0
+
+
+$font-title: 'Dela Gothic One'
+$font-text: 'Raleway'
+$color-primary: #000000
+$color-secondary: #EFEFEF
+$color-red: #DA1F39
+
+%font-main-heading
+  font-family: 'Dela Gothic One'
+  font-weight: 400
+  font-size: 64px
+  line-height: 72px
+  text-transform: uppercase
+  color: $color-secondary
+
+
+%font-heading
+  font-family: 'Dela Gothic One'
+  font-weight: 400
+  font-size: 36px
+  line-height: 140.3%
+  text-transform: uppercase
+  color: $color-primary
+
+@mixin font($font-weight, $font-size, $line-height, $color)
+  font-family: 'Raleway'
+  font-weight: $font-weight
+  font-size: $font-size
+  line-height: $line-height
+  font-feature-settings: 'pnum' on, 'lnum' on
+  color: $color
+  
+
+.container
+  max-width: 1500px
+
+.nav
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  padding: 25px 80px
+
+  a
+    text-decoration: none
+    color: $color-primary
+
+  li
+    list-style: none
+    +font(400, 16px, 19px, $color-primary)
+    align-self: center
+
+
+.nav__content
+  display: flex
+
+  li
+    margin-right: 30px
+
+  a
+    transition: all 200ms ease-in-out
+   
+    
+
+  a:hover
+    color: $color-red
+    text-shadow: 0 0 .65px #333, 0 0 .65px #333
+    
+
+
+.nav__list
+  display: flex
+  justify-content: flex-end
+  
+  li
+    justify-self: flex-end
+
+  li:nth-child(-n+3)
+    margin-right: 20px
+
+  li:nth-child(4n)
+    margin-right: 10px
+    cursor: pointer
+
+  li:nth-child(5n)
+    position: relative
+    cursor: pointer
+
+.nav__item::after
+  content: ""
+  width: 5px
+  height: 5px
+  margin: 5px
+  border-right: 1px solid $color-primary
+  border-bottom: 1px solid $color-primary
+  transform: rotate(45deg)
+  cursor: pointer
+
+
+.nav__logo-content
+  justify-self: center
+
+
+.nav__item 
+  display: flex
+
+.nav__arrow-icon
+  align-self: center
+  cursor: pointer
+  margin-left: 5px
+
+.badge
+  background: #DA1F39
+  width: 12px
+  height: 12px
+  border-radius: 50%
+  display: flex
+  justify-content: center
+  position: absolute
+  bottom: 3px
+  right: -5px
+
+.badge__number
+  +font(400, 10px, 12px, $color-secondary)
+  font-family: 'Roboto'
+
+summary
+  list-style: none
+  margin-bottom: 5px
+
+  
+
+summary::-webkit-details-marker
+  display: none
+
+details
+  display: inline !important
+  +font(400, 16px, 19px, $color-primary)
+  cursor: pointer
+
+ 
+  
+  div
+    margin-bottom: 5px
+    cursor: pointer
+
+    &:hover
+     +font(600, 16px, 19px, $color-red)
+
+  summary
+    display: flex
+    margin-right: 5px
+    &::after
+      display: inline-block
+      content: ""
+      width: 5px
+      height: 5px
+      margin: 5px
+      border-right: 1px solid $color-primary
+      border-bottom: 1px solid $color-primary
+      transform: rotate(45deg)
+      cursor: pointer
+    &:hover
+     +font(600, 16px, 19px, $color-red)
+
+.details-lang
+  align-self: center
+  position: relative
+
+details[open]
+  div
+    position: absolute
+  div:nth-child(3)
+    top: 50px
+
+.details-cur
+  align-self: center
+  position: relative
+
+  svg
+    &:hover
+      path
+        fill: $color-red
+    
+
+
