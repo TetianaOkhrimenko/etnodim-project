@@ -121,45 +121,28 @@ $color-red: #DA1F39
 
 
 .nav__list
+  +font(400, 16px, 19px, $color-primary)
   display: flex
   justify-content: flex-end
-  
-  li
-    justify-self: flex-end
+  align-items: center
 
-  li:nth-child(-n+3)
-    margin-right: 20px
 
-  li:nth-child(4n)
-    margin-right: 10px
-    cursor: pointer
 
-  li:nth-child(5n)
+  div:nth-child(5)
     position: relative
-    cursor: pointer
+  
 
-.nav__item::after
-  content: ""
-  width: 5px
-  height: 5px
-  margin: 5px
-  border-right: 1px solid $color-primary
-  border-bottom: 1px solid $color-primary
-  transform: rotate(45deg)
-  cursor: pointer
-
+.nav__item
+  display: flex
+  margin-right: 20px
+ 
+.nav__item:nth-child(4)
+  margin-right: 10px
 
 .nav__logo-content
   justify-self: center
 
 
-.nav__item 
-  display: flex
-
-.nav__arrow-icon
-  align-self: center
-  cursor: pointer
-  margin-left: 5px
 
 .badge
   background: #DA1F39
@@ -187,7 +170,6 @@ summary::-webkit-details-marker
 
 details
   display: inline !important
-  +font(400, 16px, 19px, $color-primary)
   cursor: pointer
 
  
@@ -201,8 +183,9 @@ details
 
   summary
     display: flex
-    margin-right: 5px
+
     &::after
+      align-self: center
       display: inline-block
       content: ""
       width: 5px
@@ -216,7 +199,7 @@ details
      +font(600, 16px, 19px, $color-red)
 
 .details-lang
-  align-self: center
+ 
   position: relative
 
 details[open]
@@ -226,7 +209,7 @@ details[open]
     top: 50px
 
 .details-cur
-  align-self: center
+  
   position: relative
 
   svg
@@ -234,6 +217,74 @@ details[open]
       path
         fill: $color-red
         stroke-width: 4
+
+
+@media (max-width: 768px)
+
+  img
+    max-width: 100%
+
+  .container
+    max-width: 100%
+    padding: 0 10px
+
+  .media-unvisible
+    display: none
+
+  .nav
+    padding: 8px 10px
+
+  .nav__content::after
+    content: ''
+    background: url(./card-images/media/burger-icon-media.svg)
+    width: 20px
+    height: 9px
+    display: inline-block
+    cursor: pointer
+    align-self: center
+
+  .nav__logo-content
+    grid-column: 2/3
+
+  .nav__list
+    grid-column: 3/4
+
+  .nav__item:nth-child(4n) 
+    margin-right: 15px
+
+@media (min-width: 769px) and (max-width: 992px)
+  .container
+    max-width: 100%
+    padding: 0 10px
+
+
+  .nav 
+    grid-template-columns: 40% 20% 40%
+    padding: 25px 25px
+
+
+  .nav__content 
+    li 
+      margin-right: 10px
+
+  .nav__item:nth-child(3)
+    a
+      display: none
+
+  .nav__item:nth-child(3)::after
+    font-family: "Font Awesome 6 Free"
+    font-weight: 900
+    content: "\f095"
+    font-size: large
+    
+
+  .nav__item:nth-child(4n) 
+    margin-right: 20px
+
+@media (min-width: 993px) and (max-width: 1200px)
+  .nav 
+    grid-template-columns: 40% 20% 40%
+    padding: 25px 25px
         
     
 

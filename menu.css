@@ -85,47 +85,31 @@ h1, h2, h3, p {
 }
 
 .nav__list {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
-.nav__list li {
-  justify-self: flex-end;
-}
-.nav__list li:nth-child(-n+3) {
-  margin-right: 20px;
-}
-.nav__list li:nth-child(4n) {
-  margin-right: 10px;
-  cursor: pointer;
-}
-.nav__list li:nth-child(5n) {
+.nav__list div:nth-child(5) {
   position: relative;
-  cursor: pointer;
-}
-
-.nav__item::after {
-  content: "";
-  width: 5px;
-  height: 5px;
-  margin: 5px;
-  border-right: 1px solid #000000;
-  border-bottom: 1px solid #000000;
-  transform: rotate(45deg);
-  cursor: pointer;
-}
-
-.nav__logo-content {
-  justify-self: center;
 }
 
 .nav__item {
   display: flex;
+  margin-right: 20px;
 }
 
-.nav__arrow-icon {
-  align-self: center;
-  cursor: pointer;
-  margin-left: 5px;
+.nav__item:nth-child(4) {
+  margin-right: 10px;
+}
+
+.nav__logo-content {
+  justify-self: center;
 }
 
 .badge {
@@ -161,12 +145,6 @@ summary::-webkit-details-marker {
 
 details {
   display: inline !important;
-  font-family: "Raleway";
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  font-feature-settings: "pnum" on, "lnum" on;
-  color: #000000;
   cursor: pointer;
 }
 details div {
@@ -183,9 +161,9 @@ details div:hover {
 }
 details summary {
   display: flex;
-  margin-right: 5px;
 }
 details summary::after {
+  align-self: center;
   display: inline-block;
   content: "";
   width: 5px;
@@ -206,7 +184,6 @@ details summary:hover {
 }
 
 .details-lang {
-  align-self: center;
   position: relative;
 }
 
@@ -218,10 +195,74 @@ details[open] div:nth-child(3) {
 }
 
 .details-cur {
-  align-self: center;
   position: relative;
 }
 .details-cur svg:hover path {
   fill: #DA1F39;
   stroke-width: 4;
+}
+
+@media (max-width: 768px) {
+  img {
+    max-width: 100%;
+  }
+  .container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+  .media-unvisible {
+    display: none;
+  }
+  .nav {
+    padding: 8px 10px;
+  }
+  .nav__content::after {
+    content: "";
+    background: url(./card-images/media/burger-icon-media.svg);
+    width: 20px;
+    height: 9px;
+    display: inline-block;
+    cursor: pointer;
+    align-self: center;
+  }
+  .nav__logo-content {
+    grid-column: 2/3;
+  }
+  .nav__list {
+    grid-column: 3/4;
+  }
+  .nav__item:nth-child(4n) {
+    margin-right: 15px;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  .container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+  .nav {
+    grid-template-columns: 40% 20% 40%;
+    padding: 25px 25px;
+  }
+  .nav__content li {
+    margin-right: 10px;
+  }
+  .nav__item:nth-child(3) a {
+    display: none;
+  }
+  .nav__item:nth-child(3)::after {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f095";
+    font-size: large;
+  }
+  .nav__item:nth-child(4n) {
+    margin-right: 20px;
+  }
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  .nav {
+    grid-template-columns: 40% 20% 40%;
+    padding: 25px 25px;
+  }
 }/*# sourceMappingURL=menu.css.map */

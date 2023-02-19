@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script
+      src="https://kit.fontawesome.com/3a59da4b6c.js"
+      crossorigin="anonymous"
+    ></script>
+
     <title>Menu</title>
 
     <link rel="stylesheet" href="./menu.css" />
@@ -41,7 +47,7 @@
         </div>
 
         <div class="nav__list">
-          <div class="details-lang">
+          <div class="details-lang nav__item media-unvisible">
             <details>
               <summary>UA</summary>
               <div>EN</div>
@@ -49,7 +55,7 @@
             </details>
           </div>
 
-          <div class="details-cur">
+          <div class="details-cur nav__item media-unvisible">
             <details>
               <summary>
                 <svg
@@ -94,6 +100,48 @@
                 </svg>
               </div>
             </details>
+          </div>
+
+          <div class="nav__item media-unvisible">
+            <a href="tel:+380978889292" title="Зателефонувати"
+              >+38 097 888 92 92</a
+            >
+          </div>
+          <div class="nav__item">
+            <a href="#" title="Пошук">
+              <svg
+                width="25"
+                height="25"
+                viewBox="0 0 25 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.5 20C6.79231 20 3 16.2077 3 11.5C3 6.79231 6.79231 3 11.5 3C16.2077 3 20 6.79231 20 11.5C20 16.2077 16.2077 20 11.5 20ZM11.5 4.30769C7.51154 4.30769 4.30769 7.51154 4.30769 11.5C4.30769 15.4885 7.51154 18.6923 11.5 18.6923C15.4885 18.6923 18.6923 15.4885 18.6923 11.5C18.6923 7.51154 15.4885 4.30769 11.5 4.30769Z"
+                  fill="black"
+                />
+                <path
+                  d="M16.9523 16L23 22.0477L22.0477 23L16 16.9523L16.9523 16Z"
+                  fill="black"
+                /></svg
+            ></a>
+          </div>
+
+          <div class="nav__item">
+            <a href="./cart.html" title="Корзина">
+              <svg
+                width="25"
+                height="25"
+                viewBox="0 0 25 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.25 6.80801C9.25 -0.935999 16.75 -0.936006 16.75 6.80801M5 23H21C21.5523 23 22 22.5523 22 22V7.80801C22 7.25572 21.5523 6.80801 21 6.80801H5C4.44772 6.80801 4 7.25572 4 7.80801V22C4 22.5523 4.44772 23 5 23Z"
+                  stroke="black"
+                /></svg
+            ></a>
+            <div class="badge"><p class="badge__number">1</p></div>
           </div>
         </div>
       </nav>
