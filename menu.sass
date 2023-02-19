@@ -208,6 +208,21 @@ details[open]
   div:nth-child(3)
     top: 50px
 
+  summary
+    &::after
+      align-self: center
+      display: inline-block
+      content: ""
+      width: 5px
+      height: 5px
+      margin: 5px
+      border-left: 1px solid $color-primary
+      border-top: 1px solid $color-primary
+      border-right: none
+      border-bottom: none
+      transform: rotate(45deg)
+      cursor: pointer
+
 .details-cur
   
   position: relative
