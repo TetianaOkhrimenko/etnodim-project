@@ -148,7 +148,6 @@ details {
   cursor: pointer;
 }
 details div {
-  margin-bottom: 5px;
   cursor: pointer;
 }
 details div:hover {
