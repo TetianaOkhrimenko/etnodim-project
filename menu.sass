@@ -246,8 +246,7 @@ details[open]
    position: absolute
    transition: all 400ms ease-in-out
    background-color: #FFFFFF
-   div:nth-child(1)
-     grid-column: 1/3
+   
 
    ul
      list-style: none  
@@ -261,6 +260,7 @@ details[open]
      color: #9A9A9A
      li
        margin-bottom: 25px
+       margin-right: 0
        cursor: pointer
        transition: all 300ms ease-in-out
      li:hover
@@ -268,12 +268,27 @@ details[open]
      li:nth-child(1)
        position: relative
        div
+         width: 200px
          position: absolute
          top: 0
-         left: 50%
+         left: 100%
+         text-transform: none
+         display: none
+     li:nth-child(2)
+       position: relative
+       div
+         width: 200px
+         height: 400px
+         position: absolute
+         top: -200%
+         left: 100%
          text-transform: none
          display: none
      li:nth-child(1)
+      &:hover
+        div
+         display: block
+     li:nth-child(2)
       &:hover
         div
          display: block
