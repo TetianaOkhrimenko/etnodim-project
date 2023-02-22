@@ -409,6 +409,8 @@ h1, h2, h3, p {
     color: #000000;
     position: absolute;
     z-index: 2;
+    display: flex;
+    align-items: center;
   }
   .media__list ul {
     list-style-type: none;
