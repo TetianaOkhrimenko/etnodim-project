@@ -120,6 +120,9 @@ $color-red: #DA1F39
   a:hover
     color: $color-red
     text-shadow: 0 0 .65px #333, 0 0 .65px #333
+
+  details
+    display: none
     
 
 
@@ -162,69 +165,68 @@ $color-red: #DA1F39
   +font(400, 10px, 12px, $color-secondary)
   font-family: 'Roboto'
 
-summary
-  list-style: none
-  margin-bottom: 5px
-
-  
-
-summary::-webkit-details-marker
-  display: none
-
-details
-  display: inline !important
-  cursor: pointer
-
- 
-  
-  div
-    
-    cursor: pointer
-
-    &:hover
-     +font(600, 16px, 19px, $color-red)
-
+.nav__list
   summary
-    display: flex
+    list-style: none
+    margin-bottom: 5px
 
-    &::after
-      align-self: center
-      display: inline-block
-      content: ""
-      width: 5px
-      height: 5px
-      margin: 5px
-      border-right: 1px solid $color-primary
-      border-bottom: 1px solid $color-primary
-      transform: rotate(45deg)
+  
+
+  summary::-webkit-details-marker
+    display: none
+
+  details
+    display: inline !important
+    cursor: pointer
+  
+
+    div
       cursor: pointer
-    &:hover
-     +font(600, 16px, 19px, $color-red)
+      &:hover
+        +font(600, 16px, 19px, $color-red)
+
+    summary
+      display: flex
+
+      &::after
+        align-self: center
+        display: inline-block
+        content: ""
+        width: 5px
+        height: 5px
+        margin: 5px
+        border-right: 1px solid $color-primary
+        border-bottom: 1px solid $color-primary
+        transform: rotate(45deg)
+        cursor: pointer
+      &:hover
+        +font(600, 16px, 19px, $color-red)
 
 .details-lang
  
   position: relative
 
-details[open]
-  div
-    position: absolute
-  div:nth-child(3)
-    top: 50px
+.nav__list
+  details[open]
+    div
+      position: absolute
+    div:nth-child(3)
+       top: 200%
 
-  summary
-    &::after
-      align-self: center
-      display: inline-block
-      content: ""
-      width: 5px
-      height: 5px
-      margin: 5px
-      border-left: 1px solid $color-primary
-      border-top: 1px solid $color-primary
-      border-right: none
-      border-bottom: none
-      transform: rotate(45deg)
-      cursor: pointer
+    summary
+      &::after
+        align-self: center
+        display: inline-block
+        content: ""
+        width: 5px
+        height: 5px
+        margin: 5px
+        border-left: 1px solid $color-primary
+        border-top: 1px solid $color-primary
+        border-right: none
+        border-bottom: none
+        transform: rotate(45deg)
+        cursor: pointer
 
 .details-cur
   
@@ -383,14 +385,7 @@ details[open]
   .nav
     padding: 8px 10px
 
-  .nav__content::after
-    content: ''
-    background: url(./card-images/media/burger-icon-media.svg)
-    width: 20px
-    height: 9px
-    display: inline-block
-    cursor: pointer
-    align-self: center
+ 
 
   .nav__logo-content
     grid-column: 2/3
@@ -400,5 +395,87 @@ details[open]
 
   .nav__item:nth-child(4n) 
     margin-right: 15px
+
+  .nav__content
+    details
+      display: block
+      align-self: center
+    
+
+    details[open]
+      .media__list
+        position: absolute
+        
+      summary
+        &::after
+          content: ''
+          background: url(./card-images/media/close-menu-media.svg)
+          width: 14.85px
+          height: 14.85px
+
+    summary
+      list-style: none
+      &::after
+         content: ''
+         background: url(./card-images/media/burger-icon-media.svg)
+         width: 20px
+         height: 9px
+         display: inline-block
+         cursor: pointer
+         align-self: center
+      
+    summary::-webkit-details-marker
+      display: none
+
+  .media__list
+    margin-top: 28px
+    width: 334px
+    a
+      text-decoration: none
+      font-family: 'Dela Gothic One'
+      font-weight: 400
+      font-size: 18px
+      line-height: 26px
+      text-transform: uppercase
+      color: $color-primary
+      position: absolute
+      z-index: 2
+      
+    ul
+      list-style-type: none
+      display: grid
+      grid-template-columns: 1fr
+      gap: 30px
+      
+     
+
+    li
+      margin-bottom: 30px
+
+    a:hover
+      color: $color-red
+
+    a:hover:after
+      content: ''
+      background: url(./card-images/media/scroll-media.svg)
+      width: 20px
+      height: 20px
+      display: inline-block
+      cursor: pointer
+      margin-left: 13px
+
+  .media__language
+    display: grid
+    grid-template-columns: repeat(7, 1fr)
+    +font(400, 16px, 19px, $color-primary)
+    margin-top: 30px
+
+    div
+     &:hover
+      +font(700, 16px, 19px, $color-primary)
+      svg
+        path
+          stroke: black
+          stroke-width: 0.7px
 
 

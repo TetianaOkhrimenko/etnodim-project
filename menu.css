@@ -84,6 +84,9 @@ h1, h2, h3, p {
   color: #DA1F39;
   text-shadow: 0 0 0.65px #333, 0 0 0.65px #333;
 }
+.nav__content details {
+  display: none;
+}
 
 .nav__list {
   font-family: "Raleway";
@@ -135,23 +138,21 @@ h1, h2, h3, p {
   font-family: "Roboto";
 }
 
-summary {
+.nav__list summary {
   list-style: none;
   margin-bottom: 5px;
 }
-
-summary::-webkit-details-marker {
+.nav__list summary::-webkit-details-marker {
   display: none;
 }
-
-details {
+.nav__list details {
   display: inline !important;
   cursor: pointer;
 }
-details div {
+.nav__list details div {
   cursor: pointer;
 }
-details div:hover {
+.nav__list details div:hover {
   font-family: "Raleway";
   font-weight: 600;
   font-size: 16px;
@@ -159,10 +160,10 @@ details div:hover {
   font-feature-settings: "pnum" on, "lnum" on;
   color: #DA1F39;
 }
-details summary {
+.nav__list details summary {
   display: flex;
 }
-details summary::after {
+.nav__list details summary::after {
   align-self: center;
   display: inline-block;
   content: "";
@@ -174,7 +175,7 @@ details summary::after {
   transform: rotate(45deg);
   cursor: pointer;
 }
-details summary:hover {
+.nav__list details summary:hover {
   font-family: "Raleway";
   font-weight: 600;
   font-size: 16px;
@@ -187,13 +188,13 @@ details summary:hover {
   position: relative;
 }
 
-details[open] div {
+.nav__list details[open] div {
   position: absolute;
 }
-details[open] div:nth-child(3) {
-  top: 50px;
+.nav__list details[open] div:nth-child(3) {
+  top: 200%;
 }
-details[open] summary::after {
+.nav__list details[open] summary::after {
   align-self: center;
   display: inline-block;
   content: "";
@@ -357,15 +358,6 @@ details[open] summary::after {
   .nav {
     padding: 8px 10px;
   }
-  .nav__content::after {
-    content: "";
-    background: url(./card-images/media/burger-icon-media.svg);
-    width: 20px;
-    height: 9px;
-    display: inline-block;
-    cursor: pointer;
-    align-self: center;
-  }
   .nav__logo-content {
     grid-column: 2/3;
   }
@@ -374,5 +366,92 @@ details[open] summary::after {
   }
   .nav__item:nth-child(4n) {
     margin-right: 15px;
+  }
+  .nav__content details {
+    display: block;
+    align-self: center;
+  }
+  .nav__content details[open] .media__list {
+    position: absolute;
+  }
+  .nav__content details[open] summary::after {
+    content: "";
+    background: url(./card-images/media/close-menu-media.svg);
+    width: 14.85px;
+    height: 14.85px;
+  }
+  .nav__content summary {
+    list-style: none;
+  }
+  .nav__content summary::after {
+    content: "";
+    background: url(./card-images/media/burger-icon-media.svg);
+    width: 20px;
+    height: 9px;
+    display: inline-block;
+    cursor: pointer;
+    align-self: center;
+  }
+  .nav__content summary::-webkit-details-marker {
+    display: none;
+  }
+  .media__list {
+    margin-top: 28px;
+    width: 334px;
+  }
+  .media__list a {
+    text-decoration: none;
+    font-family: "Dela Gothic One";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #000000;
+    position: absolute;
+    z-index: 2;
+  }
+  .media__list ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .media__list li {
+    margin-bottom: 30px;
+  }
+  .media__list a:hover {
+    color: #DA1F39;
+  }
+  .media__list a:hover:after {
+    content: "";
+    background: url(./card-images/media/scroll-media.svg);
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 13px;
+  }
+  .media__language {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    font-family: "Raleway";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: #000000;
+    margin-top: 30px;
+  }
+  .media__language div:hover {
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: #000000;
+  }
+  .media__language div:hover svg path {
+    stroke: black;
+    stroke-width: 0.7px;
   }
 }/*# sourceMappingURL=menu.css.map */
