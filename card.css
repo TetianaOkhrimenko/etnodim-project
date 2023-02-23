@@ -261,7 +261,7 @@ h1, h2, h3, p {
   z-index: 2;
   position: absolute;
   right: 0%;
-  top: 15%;
+  top: 16%;
   transition: all 400ms ease-in-out;
   background-color: #FFFFFF;
 }
