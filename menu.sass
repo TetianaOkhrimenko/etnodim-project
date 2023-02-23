@@ -121,8 +121,8 @@ $color-red: #DA1F39
     color: $color-red
     text-shadow: 0 0 .65px #333, 0 0 .65px #333
 
-  details
-    display: none
+.details-media-menu 
+   display: none
     
 
 
@@ -396,24 +396,24 @@ $color-red: #DA1F39
   .nav__item:nth-child(4n) 
     margin-right: 15px
 
-  .nav__content
-    details
-      display: block
-      align-self: center
+  details.details-media-menu
+    display: block
+    align-self: center
     
 
-    details[open]
-      .media__list
-        position: absolute
+  details.details-media-menu[open]
+    .media__list
+      position: absolute
         
-      summary
-        &::after
-          content: ''
-          background: url(./card-images/media/close-menu-media.svg)
-          width: 14.85px
-          height: 14.85px
+    summary.summary-media-menu
+      &::after
+        content: ''
+        background: url(./card-images/media/close-menu-media.svg)
+        width: 14.85px
+        height: 14.85px
 
-    summary
+  details.details-media-menu
+     summary.summary-media-menu
       list-style: none
       &::after
          content: ''
@@ -424,7 +424,7 @@ $color-red: #DA1F39
          cursor: pointer
          align-self: center
       
-    summary::-webkit-details-marker
+     summary::-webkit-details-marker
       display: none
 
   .media__list
@@ -479,5 +479,6 @@ $color-red: #DA1F39
         path
           stroke: black
           stroke-width: 0.7px
+
 
 

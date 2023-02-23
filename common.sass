@@ -105,6 +105,7 @@ $color-red: #DA1F39
   animation: bounce 2s ease-in-out
   animation-iteration-count: infinite
 
+
 .nav
   display: grid
   grid-template-columns: repeat(3, 1fr)
@@ -114,69 +115,58 @@ $color-red: #DA1F39
     text-decoration: none
     color: $color-primary
 
-  li
-    list-style: none
-    +font(400, 16px, 19px, $color-primary)
-    align-self: center
+  
 
+.nav__content > li
+   list-style: none
+   +font(400, 16px, 19px, $color-primary)
+   align-self: center
 
 .nav__content
   display: flex
 
   li
     margin-right: 30px
+    
 
   a
     transition: all 200ms ease-in-out
+   
    
     
 
   a:hover
     color: $color-red
     text-shadow: 0 0 .65px #333, 0 0 .65px #333
+
+.details-media-menu 
+   display: none
     
 
 
 .nav__list
+  +font(400, 16px, 19px, $color-primary)
   display: flex
   justify-content: flex-end
-  
-  li
-    justify-self: flex-end
+  align-items: center
 
-  li:nth-child(-n+3)
-    margin-right: 20px
 
-  li:nth-child(4n)
-    margin-right: 10px
-    cursor: pointer
 
-  li:nth-child(5n)
+  div:nth-child(5)
     position: relative
-    cursor: pointer
+  
 
-.nav__item::after
-  content: ""
-  width: 5px
-  height: 5px
-  margin: 5px
-  border-right: 1px solid $color-primary
-  border-bottom: 1px solid $color-primary
-  transform: rotate(45deg)
-  cursor: pointer
-
+.nav__item
+  display: flex
+  margin-right: 20px
+ 
+.nav__item:nth-child(4)
+  margin-right: 10px
 
 .nav__logo-content
   justify-self: center
 
 
-.nav__item 
-  display: flex
-
-.nav__arrow-icon
-  align-self: center
-  cursor: pointer
-  margin-left: 5px
 
 .badge
   background: #DA1F39
@@ -192,6 +182,164 @@ $color-red: #DA1F39
 .badge__number
   +font(400, 10px, 12px, $color-secondary)
   font-family: 'Roboto'
+
+.nav__list
+  summary
+    list-style: none
+    margin-bottom: 5px
+
+  
+
+  summary::-webkit-details-marker
+    display: none
+
+  details
+    display: inline !important
+    cursor: pointer
+  
+
+    div
+      cursor: pointer
+      &:hover
+        +font(600, 16px, 19px, $color-red)
+
+    summary
+      display: flex
+
+      &::after
+        align-self: center
+        display: inline-block
+        content: ""
+        width: 5px
+        height: 5px
+        margin: 5px
+        border-right: 1px solid $color-primary
+        border-bottom: 1px solid $color-primary
+        transform: rotate(45deg)
+        cursor: pointer
+      &:hover
+        +font(600, 16px, 19px, $color-red)
+
+.details-lang
+ 
+  position: relative
+
+.nav__list
+  details[open]
+    div
+      position: absolute
+    div:nth-child(3)
+       top: 200%
+
+    summary
+      &::after
+        align-self: center
+        display: inline-block
+        content: ""
+        width: 5px
+        height: 5px
+        margin: 5px
+        border-left: 1px solid $color-primary
+        border-top: 1px solid $color-primary
+        border-right: none
+        border-bottom: none
+        transform: rotate(45deg)
+        cursor: pointer
+
+.details-cur
+  
+  position: relative
+
+  svg
+    &:hover
+      path
+        fill: $color-red
+        stroke-width: 4
+
+
+.catalog__submenu-box
+   width: 100%
+   display: none
+   grid-template-columns: repeat(5, 1fr)
+   gap: 40px
+   padding: 55px 80px 30px 80px
+   z-index: 2
+   position: absolute
+   right: 0%
+   top: 18%
+   transition: all 400ms ease-in-out
+   background-color: #FFFFFF
+   
+
+   ul
+     list-style: none  
+
+   .catalog__submenu-main
+     font-family: $font-title
+     font-weight: 400
+     font-size: 18px
+     line-height: 26px
+     text-transform: uppercase
+     color: #9A9A9A
+     li
+       margin-bottom: 25px
+       margin-right: 0
+       cursor: pointer
+       transition: all 300ms ease-in-out
+       position: relative
+       &:hover
+         color: $color-primary
+         div
+           display: block
+       div
+         width: 200px
+         position: absolute
+         left: 100%
+         text-transform: none
+         display: none
+       
+     li:nth-child(1)
+       div
+         top: 0%
+     li:nth-child(2)
+       div
+         height: 400px
+         top: -200%
+     li:nth-child(3)
+       div
+         top: -392%
+     li:nth-child(4)
+       div 
+         height: 230px
+         bottom: -197%
+     
+        
+   .catalog__submenu-list
+     +font(300, 14px, 166.19%, $color-primary)
+     
+
+     li
+      margin-bottom: 18px
+      cursor: pointer
+      transition: all 300ms ease-in-out
+
+     li:hover
+      color: $color-red
+      text-shadow: 0 0 0.65px #333, 0 0 0.65px #333
+
+.catalog
+  height: 100%
+  display: flex
+  align-items: center
+  transition: all 300ms ease-in-out
+  &:hover
+    .catalog__submenu-box
+       display: grid
+
+.catalog__submenu-image
+  background-image: url(./images/menu-drop-down-image.png)
+  background-size: cover
+  grid-column: 5/6
 
 
 .arrow-right
@@ -308,7 +456,62 @@ $color-red: #DA1F39
 
 .footer-media-item
   display: none
-   
+
+
+@media (max-width: 1300px)
+  .catalog__submenu-box
+    .catalog__submenu-main
+       li
+         div
+           left: 130%
+       
+
+  
+  .catalog__submenu-image
+    width: 197px
+    background-position: center  
+
+@media (max-width: 1218px)
+  .nav 
+    grid-template-columns: 40% 20% 40%
+    padding: 25px 25px
+    
+
+@media (max-width: 992px)
+  .container
+    max-width: 100%
+    padding: 0 10px
+
+
+  .nav 
+    grid-template-columns: 40% 20% 40%
+    padding: 25px 25px
+
+
+  .nav__content 
+    li 
+      margin-right: 10px
+
+  .nav__item:nth-child(3)
+    a
+      display: none
+
+  .nav__item:nth-child(3)::after
+    font-family: "Font Awesome 6 Free"
+    font-weight: 900
+    content: "\f095"
+    font-size: large
+    
+
+  .nav__item:nth-child(4n) 
+    margin-right: 20px
+
+
+  .footer 
+    padding: 50px 20px
+
+  .footer__block 
+    grid-template-columns: 13% 23% 37% 37%
 
 @media (max-width: 768px)
 
@@ -325,14 +528,7 @@ $color-red: #DA1F39
   .nav
     padding: 8px 10px
 
-  .nav__content::after
-    content: ''
-    background: url(./card-images/media/burger-icon-media.svg)
-    width: 20px
-    height: 9px
-    display: inline-block
-    cursor: pointer
-    align-self: center
+ 
 
   .nav__logo-content
     grid-column: 2/3
@@ -340,8 +536,97 @@ $color-red: #DA1F39
   .nav__list
     grid-column: 3/4
 
-  .nav__list li:nth-child(4n) 
+  .nav__item:nth-child(4n) 
     margin-right: 15px
+
+  details.details-media-menu
+    display: block
+    align-self: center
+    
+
+  details.details-media-menu[open]
+    .media__list
+      position: absolute
+        
+    summary.summary-media-menu
+      &::after
+        content: ''
+        background: url(./card-images/media/close-menu-media.svg)
+        width: 14.85px
+        height: 14.85px
+
+  details.details-media-menu
+     summary.summary-media-menu
+      list-style: none
+      &::after
+         content: ''
+         background: url(./card-images/media/burger-icon-media.svg)
+         width: 20px
+         height: 9px
+         display: inline-block
+         cursor: pointer
+         align-self: center
+      
+     summary::-webkit-details-marker
+      display: none
+
+  .media__list
+    padding: 28px 20px 20px 10px
+    width: 334px
+    background-color: #FFFFFF
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    position: absolute
+    left: 0%
+    z-index: 2
+    a
+      text-decoration: none
+      font-family: 'Dela Gothic One'
+      font-weight: 400
+      font-size: 18px
+      line-height: 26px
+      text-transform: uppercase
+      color: $color-primary
+      position: absolute
+      z-index: 2
+      display: flex
+      align-items: center
+      
+    ul
+      list-style-type: none
+      display: grid
+      grid-template-columns: 1fr
+      gap: 30px
+      
+     
+
+    li
+      margin-bottom: 30px
+
+    a:hover
+      color: $color-red
+
+    a:hover:after
+      content: ''
+      background: url(./card-images/media/scroll-media.svg)
+      width: 20px
+      height: 20px
+      display: inline-block
+      cursor: pointer
+      margin-left: 13px
+
+  .media__language
+    display: grid
+    grid-template-columns: repeat(7, 1fr)
+    +font(400, 16px, 19px, $color-primary)
+    margin-top: 30px
+
+    div
+     &:hover
+      +font(700, 16px, 19px, $color-primary)
+      svg
+        path
+          stroke: black
+          stroke-width: 0.7px
 
   .header-cards 
     margin-bottom: 20px
@@ -402,45 +687,17 @@ $color-red: #DA1F39
     display: block
     +font(300, 14px, 166.19%, $color-primary)
 
-@media (min-width: 769px) and (max-width: 992px)
-  .container
-    max-width: 100%
-    padding: 0 10px
-
-
-  .nav 
-    grid-template-columns: 40% 20% 40%
-    padding: 25px 25px
-
-
-  .nav__content 
-    li 
-      margin-right: 10px
-
-  .nav__list
-    li:nth-child(3)
-      a
-         display: none
-
-    li:nth-child(3)::after
-      font-family: "Font Awesome 6 Free"
-      font-weight: 900
-      content: "\f095"
-      font-size: large
-
-    li:nth-child(4n) 
-      margin-right: 20px
    
-  .footer 
-    padding: 50px 20px
 
-  .footer__block 
-    grid-template-columns: 13% 23% 37% 37%
 
-@media (min-width: 993px) and (max-width: 1200px)
-  .nav 
-    grid-template-columns: 40% 20% 40%
-    padding: 25px 25px
+
+  
+
+
+  
+
+
+
 
 @media (min-width: 1500px)
   .container
