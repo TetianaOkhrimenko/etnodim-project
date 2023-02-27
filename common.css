@@ -550,6 +550,9 @@ h1, h2, h3, p {
   .nav__list {
     grid-column: 3/4;
   }
+  .nav__list div:nth-child(5) {
+    z-index: 5;
+  }
   .nav__item:nth-child(4n) {
     margin-right: 15px;
   }
